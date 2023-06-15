@@ -50,7 +50,6 @@ tasks.jar {
 publishing {
     publications {
         create<MavenPublication>("mavenJava") {
-            groupId = ""
             artifactId = "ailegorreta-kit-commons-utils"
             from(components["java"])
             versionMapping {
