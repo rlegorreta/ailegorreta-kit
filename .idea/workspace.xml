@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/commit-stage.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/jpa-buddy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/kotlinc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/images/AILLogoBig.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/images/AILLogoSmall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../gateway-service/.github/workflows/commit-stage.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/.github/workflows/commit-stage.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/settings.gradle.kts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-service/.github/workflows/commit-stage.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-service/.github/workflows/commit-stage.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../config-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-service/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../config-service/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-service/build/libs/config-service-2.0.0-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../config-service/build/libs/config-service-2.0.0-plain.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../config-service/build/libs/config-service-2.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../config-service/build/libs/config-service-2.0.0.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway-service/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway-service/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway-service/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway-service/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway-service/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../gateway-service/src/test/kotlin/com/ailegorreta/gatewayservice/GatewayServiceApplicationTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/test/kotlin/com/ailegorreta/gatewayservice/GatewayServiceApplicationTests.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RFjiYZXYdv0iTLmjTnrLMr2Jy7" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="" />
+      <created>1686852852232</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686852852232</updated>
+      <workItem from="1686852855473" duration="3916000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
