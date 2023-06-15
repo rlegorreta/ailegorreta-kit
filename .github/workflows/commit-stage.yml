@@ -30,7 +30,7 @@ jobs:
         id: scan                              # Assigns an identifier to the current step so that it can be referenced from subsequent steps
         with:
           path: "${{ github.workspace }}"     # The path to the checked-out repository.
-          fail-build: false                   #  Whether to fail the build in the event of security vulnerabilities
+          fail-build: false                   # Whether to fail the build in the event of security vulnerabilities
           severity-cutoff: high               # Minimum security category to be considered (low, medium, high, critical)
       - name: Upload vulnerability report
         uses: github/codeql-action/upload-sarif@v2 # Uploads the security vulnerability report to GitHub (SARIF format)
