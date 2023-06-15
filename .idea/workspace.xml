@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.11">
+    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.12">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" afterDir="false" />
     </list>
@@ -120,7 +120,7 @@
       <updated>1686852852232</updated>
       <workItem from="1686852855473" duration="7137000" />
       <workItem from="1686866766768" duration="1118000" />
-      <workItem from="1686867893327" duration="1541000" />
+      <workItem from="1686867893327" duration="1978000" />
     </task>
     <task id="LOCAL-00001" summary="2.0.0">
       <created>1686856963488</created>
@@ -227,7 +227,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686869064130</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="2.0.12">
+      <created>1686869463897</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1686869463897</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +268,7 @@
     <MESSAGE value="2.0.9" />
     <MESSAGE value="2.0.10" />
     <MESSAGE value="2.0.11" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0.11" />
+    <MESSAGE value="2.0.12" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0.12" />
   </component>
 </project>
