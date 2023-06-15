@@ -6,6 +6,8 @@ buildscript {
     }
 }
 
+group = "com.acme"
+
 plugins {
     `java-library`
     `maven-publish`
@@ -17,7 +19,6 @@ plugins {
 }
 
 allprojects {
-    group = "master"
     version = "2.0.0"
 
     tasks.withType<JavaCompile> {
