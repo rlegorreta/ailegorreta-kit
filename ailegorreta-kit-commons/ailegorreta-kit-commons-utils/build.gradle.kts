@@ -10,8 +10,6 @@ plugins {
     kotlin("jvm") version "1.8.21"
 }
 
-group = "com.ailegorreta"
-version = "2.0.0"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 configurations {
