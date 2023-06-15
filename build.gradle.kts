@@ -17,7 +17,7 @@ plugins {
 }
 
 allprojects {
-    group = "com.ailegorreta"
+    /* group = "com.ailegorreta" */
     version = "2.0.0"
 
     tasks.withType<JavaCompile> {
