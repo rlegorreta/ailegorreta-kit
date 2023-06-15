@@ -10,6 +10,7 @@ plugins {
     kotlin("jvm") version "1.8.21"
 }
 
+group = "chafa.com"
 java.sourceCompatibility = JavaVersion.VERSION_17
 
 configurations {

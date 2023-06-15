@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.15">
+    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.16">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,7 +121,7 @@
       <updated>1686852852232</updated>
       <workItem from="1686852855473" duration="7137000" />
       <workItem from="1686866766768" duration="1118000" />
-      <workItem from="1686867893327" duration="3351000" />
+      <workItem from="1686867893327" duration="3679000" />
     </task>
     <task id="LOCAL-00001" summary="2.0.0">
       <created>1686856963488</created>
@@ -255,7 +256,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686870715149</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="2.0.16">
+      <created>1686871326248</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1686871326248</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -293,6 +301,7 @@
     <MESSAGE value="2.0.13" />
     <MESSAGE value="2.0.14" />
     <MESSAGE value="2.0.15" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0.15" />
+    <MESSAGE value="2.0.16" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0.16" />
   </component>
 </project>

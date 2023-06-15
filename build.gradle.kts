@@ -6,8 +6,6 @@ buildscript {
     }
 }
 
-group = "com.acme"
-
 plugins {
     `java-library`
     `maven-publish`
