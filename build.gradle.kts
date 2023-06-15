@@ -31,6 +31,7 @@ allprojects {
             jvmTarget = "17"
         }
     }
+
 }
 
 
