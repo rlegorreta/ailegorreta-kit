@@ -22,6 +22,7 @@
  */
 package com.ailegorreta.commons.dtomappers
 
+import java.util.*
 import kotlin.reflect.KProperty1
 
 /**
