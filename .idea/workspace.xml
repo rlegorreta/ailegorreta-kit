@@ -4,53 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/commit-stage.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/jpa-buddy.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/images/AILLogoBig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/images/AILLogoSmall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../gateway-service/.github/workflows/commit-stage.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/.github/workflows/commit-stage.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/settings.gradle.kts" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-service/.github/workflows/commit-stage.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../config-service/.github/workflows/commit-stage.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/../config-service/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-service/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/../config-service/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-service/build/libs/config-service-2.0.0-plain.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../config-service/build/libs/config-service-2.0.0-plain.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../config-service/build/libs/config-service-2.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../config-service/build/libs/config-service-2.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../gateway-service/src/test/kotlin/com/ailegorreta/gatewayservice/GatewayServiceApplicationTests.kt" beforeDir="false" afterPath="$PROJECT_DIR$/../gateway-service/src/test/kotlin/com/ailegorreta/gatewayservice/GatewayServiceApplicationTests.kt" afterDir="false" />
-    </list>
+    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.0" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -100,11 +54,34 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1686852852232</updated>
-      <workItem from="1686852855473" duration="3916000" />
+      <workItem from="1686852855473" duration="4200000" />
     </task>
+    <task id="LOCAL-00001" summary="2.0.0">
+      <created>1686856963488</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686856963488</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="2.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0.0" />
   </component>
 </project>
