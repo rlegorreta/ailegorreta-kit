@@ -1,12 +1,10 @@
-
 plugins {
     `java-library`
     `maven-publish`
     id("org.springframework.boot") version "3.1.0"
     id("io.spring.dependency-management") version "1.1.0"
     id("java")
-    kotlin("jvm") version "1.8.21"
-}
+    kotlin("jvm") version "1.8.21"}
 
 group = "com.ailegorreta"
 version = "2.0.0"
@@ -30,8 +28,8 @@ dependencies {
     implementation("org.apache.commons:commons-lang3:3.12.0")
     implementation("org.slf4j:slf4j-api")
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.2")
+    testImplementation(platform("org.junit:junit-bom:5.9.1"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
 dependencyManagement {
@@ -40,18 +38,11 @@ dependencyManagement {
     }
 }
 
-tasks.jar {
-    manifest {
-        attributes(mapOf("Implementation-Title" to project.name,
-                         "Implementation-Version" to project.version))
-    }
-}
-
 publishing {
     publications {
         create<MavenPublication>("mavenJava") {
             groupId = "com.ailegorreta"
-            artifactId = "ailegorreta-kit-commons-utils"
+            artifactId = "ailegorreta-kit-commons-event"
             from(components["java"])
             versionMapping {
                 usage("java-api") {
@@ -62,8 +53,8 @@ publishing {
                 }
             }
             pom {
-                name.set("ailegorreta-commons-utils")
-                description.set("General utilities for any micro.service")
+                name.set("ailegorreta-commons-event")
+                description.set("DTO to be used by events")
                 url.set("http://www.legosoft.com.mx")
                 properties.set(mapOf(
                     "version" to "2.0.0"
@@ -85,7 +76,7 @@ publishing {
 
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit/ailegorreta-kit-commons-utils")
+            url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
             credentials {
                 username = System.getenv("GITHUB_ACTOR") ?: "rlegorreta"
                 password = System.getenv("GITHUB_TOKEN") ?: "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"
@@ -94,6 +85,6 @@ publishing {
     }
 }
 
-tasks.getByName<Test>("test") {
+tasks.test {
     useJUnitPlatform()
 }

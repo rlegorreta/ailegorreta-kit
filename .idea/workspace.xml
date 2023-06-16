@@ -4,9 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.23">
+    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.24">
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/src/main/kotlin/com/ailegorreta/commons/event/EventGraphqlError.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +72,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -126,7 +132,7 @@
       <updated>1686852852232</updated>
       <workItem from="1686852855473" duration="7137000" />
       <workItem from="1686866766768" duration="1118000" />
-      <workItem from="1686867893327" duration="7402000" />
+      <workItem from="1686867893327" duration="9001000" />
     </task>
     <task id="LOCAL-00001" summary="2.0.0">
       <created>1686856963488</created>
@@ -317,7 +323,14 @@
       <option name="project" value="LOCAL" />
       <updated>1686875251594</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="2.0.24">
+      <created>1686875583700</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1686875583700</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -363,6 +376,7 @@
     <MESSAGE value="2.0.21" />
     <MESSAGE value="2.0.22" />
     <MESSAGE value="2.0.23" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0.23" />
+    <MESSAGE value="2.0.24" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0.24" />
   </component>
 </project>
