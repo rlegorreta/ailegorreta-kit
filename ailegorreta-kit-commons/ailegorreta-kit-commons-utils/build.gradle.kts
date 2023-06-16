@@ -48,7 +48,7 @@ tasks.jar {
 publishing {
     publications {
         create<MavenPublication>("mavenJava") {
-            groupId = "com.ailegorreta"
+            groupId = "com.ailegorreta.sample"
             artifactId = "ailegorreta-kit-commons-utils"
             from(components["java"])
             versionMapping {
@@ -60,7 +60,7 @@ publishing {
                 }
             }
             pom {
-                name.set("ailegorreta-commons-utilsxxx")
+                name.set("ailegorreta-commons-utils")
                 description.set("General utilities for any micro.service")
                 url.set("http://www.legosoft.com.mx")
                 properties.set(mapOf(
