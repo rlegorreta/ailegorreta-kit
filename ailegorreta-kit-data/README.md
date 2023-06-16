@@ -1,9 +1,9 @@
-# <img height="25" src="./images/AILLogoSmall.png" width="40"/> AILegorreta-kit-commons
+# <img height="25" src="./images/AILLogoSmall.png" width="40"/> AILegorreta-kit-data
 
 <a href="https://www.legosoft.com.mx"><img height="150px" src="./images/AILLogoBig.png" alt="AI Legorreta" align="left"/></a>
-This repository contains the source code for all libraries (java packages) that are imported from any microservice.
-`ailegorreta-kit-commons` has packages for any front-end or back-end microservice  in order to avoid repeating code and
-also to simplify maintenance.
+This repository contains the source code for all libraries (java packages) that are imported from any microservice that
+needs some data persistence access. `ailegorreta-kit-data` has packages for access for different
+dabases in order to avoid repeating code and also to simplify maintenance.
 
 The purpose of these java packages are to minimize development time, simplify maintenance for the Ai marketplace by
 LegoSoft Soluciones, S.C. These are generic packages that also can be imported by any Clients system but the
@@ -11,23 +11,28 @@ LegoSoft Soluciones, S.C. These are generic packages that also can be imported b
 as many times as he(she) likes, inside his(her) Company only.
 ## What is it?
 
-The `ailegorreta-kit-commons` is a set of generic classes that can be utilized for a different front-end and
-back-end microservices.
+The `ailegorreta-kit-data` is a set of generic classes that can be utilized for a different microservices.
 The objective is to reduce code repetition.
+
+The supported databases are:
+
+* Postgres database
+* MS-sql server.
+* Neo4j
+* MongoDB
+* Redis
 
 ## List of packages:
 
-### AILegorreta Kit Commons
+### AILegorreta Kit for data manipulation packages
 
-Common package to be used by the front or back-end microservice. The subprojects are:
+Spring Data enhancement packages:
 
-* `ailegorreta-kit-commons-utils`: Java and Kotlin utilities common classes and methods.
-* `ailegorreta-kit-commons-event`: DTOs to send and receive kafka messages.
-* `ailegorreta-kit-commons-cmis` : General classes to interfaces with Alfresco via CMIS [1.1] standard.
-* `ailegorreta-kit-commons-preference` : Classes and methods to support User preferences.
+* `ai-legorreta-kit-data-jpa`: Utilities for Spring Data JPA.
+* `ai-legorreta-kit-data-mongodb`: Utilities for Spring Data MongoDB.
+* `ai-legorreta-kit-data-neo4j`: Utilities for Spring Data Neo4j graph database.
 
-
-## History of ailegorreta-kit-commons
+## History of ailegorreta-kit-data
 
 ### Version 1.X
 

@@ -1,9 +1,9 @@
-# <img height="25" src="./images/AILLogoSmall.png" width="40"/> AILegorreta-kit-commons
+# <img height="25" src="./images/AILLogoSmall.png" width="40"/> AILegorreta-kit-resource-server
 
 <a href="https://www.legosoft.com.mx"><img height="150px" src="./images/AILLogoBig.png" alt="AI Legorreta" align="left"/></a>
-This repository contains the source code for all libraries (java packages) that are imported from any microservice.
-`ailegorreta-kit-commons` has packages for any front-end or back-end microservice  in order to avoid repeating code and
-also to simplify maintenance.
+This repository contains the source code for all libraries (java packages) that are imported from any microservices for
+the backe-end. `ailegorreta-kit-resource-server` has packages for security in order to avoid repeating code and also
+to simplify maintenance.
 
 The purpose of these java packages are to minimize development time, simplify maintenance for the Ai marketplace by
 LegoSoft Soluciones, S.C. These are generic packages that also can be imported by any Clients system but the
@@ -11,23 +11,19 @@ LegoSoft Soluciones, S.C. These are generic packages that also can be imported b
 as many times as he(she) likes, inside his(her) Company only.
 ## What is it?
 
-The `ailegorreta-kit-commons` is a set of generic classes that can be utilized for a different front-end and
-back-end microservices.
+The `ailegorreta-kit-resource-server` is a set of generic classes that can be utilized for a different microservices.
 The objective is to reduce code repetition.
 
 ## List of packages:
 
-### AILegorreta Kit Commons
+### AILegorreta Kit fore back-end microservices
 
-Common package to be used by the front or back-end microservice. The subprojects are:
+These projects are for bak-end microservices.
 
-* `ailegorreta-kit-commons-utils`: Java and Kotlin utilities common classes and methods.
-* `ailegorreta-kit-commons-event`: DTOs to send and receive kafka messages.
-* `ailegorreta-kit-commons-cmis` : General classes to interfaces with Alfresco via CMIS [1.1] standard.
-* `ailegorreta-kit-commons-preference` : Classes and methods to support User preferences.
+* `ai-legorreta-kit-resource-security`: Spring security utilities for back-end microservices.
 
 
-## History of ailegorreta-kit-commons
+## History of ailegorreta-kit-resource-server
 
 ### Version 1.X
 
