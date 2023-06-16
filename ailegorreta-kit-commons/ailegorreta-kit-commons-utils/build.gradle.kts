@@ -60,7 +60,7 @@ publishing {
                 }
             }
             pom {
-                name.set("ailegorreta-commons-utils")
+                name.set("ailegorreta-commons-utilsxxx")
                 description.set("General utilities for any micro.service")
                 url.set("http://www.legosoft.com.mx")
                 properties.set(mapOf(
