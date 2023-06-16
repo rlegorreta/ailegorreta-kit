@@ -1,5 +1,3 @@
-import org.gradle.internal.classpath.Instrumented.systemProperty
-import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     `java-library`
@@ -50,6 +48,7 @@ tasks.jar {
 publishing {
     publications {
         create<MavenPublication>("mavenJava") {
+            groupId = "com.ailegorreta"
             artifactId = "ailegorreta-kit-commons-utils"
             from(components["java"])
             versionMapping {
@@ -84,7 +83,7 @@ publishing {
 
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit/ailegorreta-kit-commons-utils/")
+            url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit/ailegorreta-kit-commons-utils")
             credentials {
                 username = System.getenv("GITHUB_ACTOR") ?: "rlegorreta"
                 password = System.getenv("GITHUB_TOKEN") ?: "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"
