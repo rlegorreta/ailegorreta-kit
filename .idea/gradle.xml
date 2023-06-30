@@ -8,7 +8,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/ailegorreta-kit-client" />
+            <option value="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security" />
+            <option value="$PROJECT_DIR$/ailegorreta-kit-commons" />
             <option value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event" />
+            <option value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-security" />
             <option value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils" />
             <option value="$PROJECT_DIR$/ailegorreta-kit-resource-sever" />
             <option value="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security" />

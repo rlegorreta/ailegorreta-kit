@@ -28,6 +28,7 @@ extra["jacksonVersion"] = "2.15.2"
 dependencies {
     implementation("org.apache.commons:commons-lang3:3.12.0")
     implementation("org.slf4j:slf4j-api")
+
     implementation("com.fasterxml.jackson.core:jackson-databind:${property("jacksonVersion")}")
 
     testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")

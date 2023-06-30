@@ -1,10 +1,12 @@
+
 plugins {
     `java-library`
     `maven-publish`
     id("org.springframework.boot") version "3.1.0"
     id("io.spring.dependency-management") version "1.1.0"
     id("java")
-    kotlin("jvm") version "1.8.21"}
+    kotlin("jvm") version "1.8.21"
+}
 
 group = "com.ailegorreta"
 version = "2.0.0"
@@ -17,28 +19,35 @@ configurations {
 }
 
 repositories {
-    mavenLocal()
     mavenCentral()
     maven { url = uri("https://repo.spring.io/snapshot") }
 }
 
-extra["springCloudVersion"] = "2022.0.3"
-extra["ailegorreta-kit-version"] = "2.0.0"
-extra["jacksonVersion"] = "2.15.2"
+extra["springCloudVersion"] = "2022.0.3-SNAPSHOT"
+extra["ailegorretaVersion"] = "2.0.0"
+extra["vaadinVersion"] = "24.1.0"
 
 dependencies {
-    implementation("org.springframework.cloud:spring-cloud-stream")
-    implementation("org.springframework.cloud:spring-cloud-stream-binder-kafka")
+    implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
+    implementation("org.springframework.cloud:spring-cloud-starter-loadbalancer")
+
+    implementation(project(":ailegorreta-kit-commons:ailegorreta-kit-commons-security"))
+    implementation("com.vaadin:vaadin-core:${property("vaadinVersion")}") {
+        exclude( group="com.vaadin",  module="flow-polymer-template") /* Replace artifactId with vaadin-core to use only free components */
+    }
+    implementation("com.vaadin:vaadin-spring-boot-starter:${property("vaadinVersion")}") {
+        exclude( group="com.vaadin",  module="vaadin-core") /* Excluding so that webjars are not included. */
+    }
+
+    /* An HTML sanitizer to protect from HTML that can harm and compromiseVaadin */
+    implementation("com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer:20200713.1")
 
     implementation("org.apache.commons:commons-lang3:3.12.0")
     implementation("org.slf4j:slf4j-api")
 
-    implementation("com.fasterxml.jackson.core:jackson-databind:${property("jacksonVersion")}")
-
-    implementation("com.ailegorreta:ailegorreta-kit-commons-utils:${property("ailegorreta-kit-version")}")
-
-    testImplementation(platform("org.junit:junit-bom:5.9.1"))
-    testImplementation("org.junit.jupiter:junit-jupiter")
+    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
+    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.2")
 }
 
 dependencyManagement {
@@ -58,7 +67,7 @@ publishing {
     publications {
         create<MavenPublication>("mavenJava") {
             groupId = "com.ailegorreta"
-            artifactId = "ailegorreta-kit-commons-event"
+            artifactId = "ailegorreta-kit-client-security"
             from(components["java"])
             versionMapping {
                 usage("java-api") {
@@ -69,8 +78,8 @@ publishing {
                 }
             }
             pom {
-                name.set("ailegorreta-commons-event")
-                description.set("DTO to be used by events")
+                name.set("ailegorreta-kit-client-security")
+                description.set("Classes to implement security for front-end microservices")
                 url.set("http://www.legosoft.com.mx")
                 properties.set(mapOf(
                     "version" to "2.0.0"
@@ -101,6 +110,6 @@ publishing {
     }
 }
 
-tasks.test {
+tasks.getByName<Test>("test") {
     useJUnitPlatform()
 }

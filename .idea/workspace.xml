@@ -4,43 +4,38 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.29">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/images/AILLogoBig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/images/AILLogoSmall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/images/AILLogoBig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/images/AILLogoSmall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/images/AILLogoBig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/images/AILLogoSmall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/images/AILLogoSmall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/images/AuthServerLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/java/com/ailegorreta/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/rest/RestCaller.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/rest/RestCallerConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/rest/WebClientFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/rest/config/WebClientConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/rest/exception/RestClientException.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/rest/exception/ServiceException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/security/config/SecurityServiceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/security/dto/TokenDTO.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/utils/HasLogger.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/utils/UserContext.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/utils/UserContextFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/utils/UserContextHolder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/images/AILLogoBig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/images/AILLogoSmall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/AILLogoBig.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/images/AILLogoSmall.png" afterDir="false" />
+    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.33">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/images/AILLogoSmall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/images/SpringSecurity.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta/client/security/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta/client/security/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta/client/security/vaadin/LogoutUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta/client/security/vaadin/VaadinAwareSecurityContextHolderStrategy.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta/client/security/vaadin/VaadinSessionConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/InstrucctionesSso.pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/InstrucctionesSso.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/Libraries.pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/NotasConfigSrv.pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/QuickReference.pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/WindowLayout.pages" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/WindowLayout.pdf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/images/AILLogoSmall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/images/ClientIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/src/main/kotlin/com/ailegorreta/commons/event/EventDTO.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/src/main/kotlin/com/ailegorreta/commons/event/EventErrorDTO.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/src/main/kotlin/com/ailegorreta/commons/event/EventGraphqlError.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/src/main/kotlin/com/ailegorreta/commons/event/EventGraphqlError.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/src/main/kotlin/com/ailegorreta/commons/utils/ApplicationContextProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/src/main/java/com/ailegorreta/commons/utils/ApplicationContextProvider.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/src/main/kotlin/com/ailegorreta/commons/utils/FormattingUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/src/main/java/com/ailegorreta/commons/utils/FormattingUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,6 +66,18 @@
         <task path="$PROJECT_DIR$/ailegorreta-kit-resource-sever">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ailegorreta-kit-client">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-security">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -81,37 +88,34 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ailegorreta-kit" type="f1a62948:ProjectNode" />
+                <item name="ailegorreta-kit-commons" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ailegorreta-kit" type="f1a62948:ProjectNode" />
+                <item name="ailegorreta-kit-commons" type="2d1252cf:ModuleNode" />
+                <item name="ailegorreta-kit-commons-event" type="2d1252cf:ModuleNode" />
+              </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="ailegorreta-kit" type="f1a62948:ProjectNode" />
+                <item name="ailegorreta-kit-commons" type="2d1252cf:ModuleNode" />
+                <item name="ailegorreta-kit-commons-event" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ailegorreta-kit" type="f1a62948:ProjectNode" />
+                <item name="ailegorreta-kit-commons" type="2d1252cf:ModuleNode" />
+                <item name="ailegorreta-kit-commons-event" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="build" type="c8890929:TasksNode$1" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ailegorreta-kit" type="f1a62948:ProjectNode" />
-                <item name="ailegorreta-kit-resource-sever" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ailegorreta-kit" type="f1a62948:ProjectNode" />
-                <item name="ailegorreta-kit-resource-sever" type="2d1252cf:ModuleNode" />
-                <item name="ailegorreta-kit-resource-server-security" type="2d1252cf:ModuleNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ailegorreta-kit" type="f1a62948:ProjectNode" />
-                <item name="ailegorreta-kit-resource-sever" type="2d1252cf:ModuleNode" />
-                <item name="ailegorreta-kit-resource-server-security" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ailegorreta-kit" type="f1a62948:ProjectNode" />
-                <item name="ailegorreta-kit-resource-sever" type="2d1252cf:ModuleNode" />
-                <item name="ailegorreta-kit-resource-server-security" type="2d1252cf:ModuleNode" />
+                <item name="ailegorreta-kit-commons" type="2d1252cf:ModuleNode" />
+                <item name="ailegorreta-kit-commons-event" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
@@ -121,6 +125,14 @@
         </projects_view>
       </state>
     </system>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Kotlin Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -141,6 +153,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/rlh/LocalDeveloper/ialegorreta-mktplace/ailegorreta-kit/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -150,6 +163,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;85403ee1de7aeeb2797b30e4f13b7985&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -157,12 +171,15 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ailegorreta.commons.utils" />
+    </key>
   </component>
-  <component name="RunManager" selected="Gradle.ailegorreta-kit:ailegorreta-kit-resource-sever:ailegorreta-kit-resource-server-security [publish]">
-    <configuration name="ailegorreta-kit [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [publish]">
+    <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -181,10 +198,10 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="ailegorreta-kit [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -203,10 +220,32 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="ailegorreta-kit:ailegorreta-kit-resource-sever:ailegorreta-kit-resource-server-security [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publish" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-utils [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -225,32 +264,10 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="ailegorreta-kit:ailegorreta-kit-resource-sever:ailegorreta-kit-resource-server-security [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-utils [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="ailegorreta-kit:ailegorreta-kit-resource-sever:ailegorreta-kit-resource-server-security [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -271,11 +288,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-resource-sever:ailegorreta-kit-resource-server-security [publish]" />
-        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-resource-sever:ailegorreta-kit-resource-server-security [build]" />
-        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-resource-sever:ailegorreta-kit-resource-server-security [clean]" />
-        <item itemvalue="Gradle.ailegorreta-kit [clean]" />
-        <item itemvalue="Gradle.ailegorreta-kit [build]" />
+        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [publish]" />
+        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [build]" />
+        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [clean]" />
+        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-utils [publish]" />
+        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-utils [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -297,7 +314,21 @@
       <workItem from="1686939573389" duration="3282000" />
       <workItem from="1686954098150" duration="619000" />
       <workItem from="1686954727019" duration="390000" />
-      <workItem from="1686955128304" duration="1835000" />
+      <workItem from="1686955128304" duration="2286000" />
+      <workItem from="1686957429346" duration="464000" />
+      <workItem from="1686957945979" duration="226000" />
+      <workItem from="1686958251023" duration="226000" />
+      <workItem from="1687191029125" duration="7162000" />
+      <workItem from="1687201948083" duration="2263000" />
+      <workItem from="1687218061153" duration="9829000" />
+      <workItem from="1687285371846" duration="22342000" />
+      <workItem from="1687534047318" duration="598000" />
+      <workItem from="1687545809296" duration="599000" />
+      <workItem from="1687804210485" duration="29227000" />
+      <workItem from="1687992887401" duration="16480000" />
+      <workItem from="1688080543974" duration="927000" />
+      <workItem from="1688083479152" duration="2692000" />
+      <workItem from="1688147862947" duration="2977000" />
     </task>
     <task id="LOCAL-00001" summary="2.0.0">
       <created>1686856963488</created>
@@ -530,7 +561,35 @@
       <option name="project" value="LOCAL" />
       <updated>1686878248155</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="2.0.30">
+      <created>1686957095826</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1686957095826</updated>
+    </task>
+    <task id="LOCAL-00035" summary="2.0.31">
+      <created>1688147966414</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1688147966414</updated>
+    </task>
+    <task id="LOCAL-00036" summary="2.0.32">
+      <created>1688148375354</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1688148375354</updated>
+    </task>
+    <task id="LOCAL-00037" summary="2.0.33">
+      <created>1688148487187</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1688148487187</updated>
+    </task>
+    <option name="localTasksCounter" value="38" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -552,10 +611,6 @@
       <path value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="2.0.5" />
-    <MESSAGE value="2.0.6" />
-    <MESSAGE value="2.0.7" />
-    <MESSAGE value="2.0.8" />
     <MESSAGE value="2.0.9" />
     <MESSAGE value="2.0.10" />
     <MESSAGE value="2.0.11" />
@@ -577,6 +632,10 @@
     <MESSAGE value="2.0.27" />
     <MESSAGE value="2.0.28" />
     <MESSAGE value="2.0.29" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0.29" />
+    <MESSAGE value="2.0.30" />
+    <MESSAGE value="2.0.31" />
+    <MESSAGE value="2.0.32" />
+    <MESSAGE value="2.0.33" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0.33" />
   </component>
 </project>

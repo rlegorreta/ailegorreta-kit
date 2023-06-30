@@ -27,6 +27,8 @@ extra["springCloudVersion"] = "2022.0.3"
 extra["ailegorretaVersion"] = "2.0.0"
 
 dependencies {
+    implementation("org.springframework.boot:spring-boot-starter-webflux")
+
     implementation("org.apache.commons:commons-lang3:3.12.0")
     implementation("org.slf4j:slf4j-api")
 
@@ -83,6 +85,7 @@ publishing {
     repositories {
         mavenLocal()
 
+        /*
         maven {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
@@ -91,6 +94,7 @@ publishing {
                 password = System.getenv("GITHUB_TOKEN") ?: "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"
             }
         }
+         */
     }
 }
 

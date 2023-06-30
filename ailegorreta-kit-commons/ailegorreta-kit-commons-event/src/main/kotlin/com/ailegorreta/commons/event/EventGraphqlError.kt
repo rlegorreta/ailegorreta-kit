@@ -27,8 +27,8 @@ package com.ailegorreta.commons.event
  * like the operation number.
  *
  * @author rlh
- * @project : lmasskit-commons-event
- * @date June, 2021
+ * @project : ailegorreta-kit--commons-event
+ * @date June, 2023
  */
 data class EventGraphqlError constructor (val errors: Collection<Map<String, Any>>? = null,
                                           var extraData: MutableMap<String, Any>? = null) {

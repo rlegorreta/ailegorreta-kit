@@ -34,7 +34,7 @@ import org.springframework.context.ApplicationContextAware;
  *
  * @author rlh
  * @project : ailegorreta-kit-commons
- * @date May 2023
+ * @date June 2023
  */
 abstract public class ApplicationContextProvider implements ApplicationContextAware {
 

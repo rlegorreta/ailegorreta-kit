@@ -1,10 +1,17 @@
 rootProject.name = "ailegorreta-kit"
 
-include("ailegorreta-kit-commons-utils")
-project(":ailegorreta-kit-commons-utils").projectDir = file("ailegorreta-kit-commons/ailegorreta-kit-commons-utils")
+include("ailegorreta-kit-commons:ailegorreta-kit-commons-utils")
+findProject(":ailegorreta-kit-commons:ailegorreta-kit-commons-utils")?.name = "ailegorreta-kit-commons-utils"
 
-include("ailegorreta-kit-commons-event")
-project(":ailegorreta-kit-commons-event").projectDir = file("ailegorreta-kit-commons/ailegorreta-kit-commons-event")
+include("ailegorreta-kit-commons:ailegorreta-kit-commons-event")
+findProject(":ailegorreta-kit-commons:ailegorreta-kit-commons-event")?.name = "ailegorreta-kit-commons-event"
+
+include("ailegorreta-kit-commons:ailegorreta-kit-commons-security")
+findProject(":ailegorreta-kit-commons:ailegorreta-kit-commons-security")?.name = "ailegorreta-kit-commons-security"
 
 include("ailegorreta-kit-resource-sever:ailegorreta-kit-resource-server-security")
 findProject(":ailegorreta-kit-resource-sever:ailegorreta-kit-resource-server-security")?.name = "ailegorreta-kit-resource-server-security"
+
+
+include("ailegorreta-kit-client:ailegorreta-kit-client-security")
+findProject(":ailegorreta-kit-client:ailegorreta-kit-client-security")?.name = "ailegorreta-kit-client-security"
