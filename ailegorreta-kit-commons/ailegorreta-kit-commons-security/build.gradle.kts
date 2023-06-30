@@ -23,7 +23,7 @@ repositories {
     maven { url = uri("https://repo.spring.io/snapshot") }
 }
 
-extra["springCloudVersion"] = "2022.0.3-SNAPSHOT"
+extra["springCloudVersion"] = "2022.0.3"
 extra["ailegorretaVersion"] = "2.0.0"
 
 dependencies {
