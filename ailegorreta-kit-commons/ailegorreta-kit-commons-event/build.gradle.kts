@@ -23,9 +23,12 @@ repositories {
     maven {
         name = "GitHubAiLegorretaPackages"
         url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
-        credentials {
-            username = System.getenv("GITHUB_ACTOR") ?: "rlegorreta"
-            password = System.getenv("GITHUB_TOKEN") ?: "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"
+        credentials(HttpHeaderCredentials::class) {
+            name = "Authorization"
+            value = "Bearer ${project.findProperty("gpr.token") as String}"
+        }
+        authentication {
+            create<HttpHeaderAuthentication>("header")
         }
     }
 }
