@@ -25,7 +25,6 @@ package com.ailegorreta.client.security.config;
 import com.ailegorreta.commons.security.authserver.AuthOidcClientInitiatedLogoutSuccessHandler;
 import com.ailegorreta.commons.security.config.SecurityServiceConfig;
 import com.ailegorreta.commons.security.repository.SessionRepository;
-import com.ailegorreta.commons.security.repository.SessionRepositoryImp;
 import com.ailegorreta.commons.security.repository.SessionRepositoryListener;
 import com.ailegorreta.client.security.vaadin.VaadinAwareSecurityContextHolderStrategy;
 import com.vaadin.flow.spring.security.VaadinSavedRequestAwareAuthenticationSuccessHandler;
@@ -76,7 +75,7 @@ public abstract class SecurityConfig extends VaadinWebSecurity {
 
     @Bean
     public SessionRepository sessionRepository() {
-        return new SessionRepositoryImp();
+        return new SessionRepository();
     }
 
     @Bean

@@ -23,7 +23,7 @@ repositories {
     maven { url = uri("https://repo.spring.io/snapshot") }
 }
 
-extra["springCloudVersion"] = "2022.0.3-SNAPSHOT"
+extra["springCloudVersion"] = "2022.0.3"
 extra["ailegorretaVersion"] = "2.0.0"
 extra["vaadinVersion"] = "24.1.0"
 
@@ -108,6 +108,11 @@ publishing {
             }
         }
     }
+}
+
+// Validate any Vaadin deprecation
+tasks.withType<JavaCompile> {
+    options.compilerArgs.add("-Xlint:deprecation")
 }
 
 tasks.getByName<Test>("test") {

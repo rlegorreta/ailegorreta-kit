@@ -1,0 +1,20 @@
+:root {
+    --lumo-button-size-s: 1.25em;
+    --lumo-button-size-m: 1.5em;
+    --lumo-button-size-l: 2.25em;
+}
+
+.lumo-button.size-s  {
+    width: var(--lumo-button-size-s);
+    height: var(--lumo-button-size-s);
+}
+
+.lumo-button.size-m {
+    width: var(--lumo-button-size-m);
+    height: var(--lumo-button-size-m);
+}
+
+.lumo-button.size-l {
+    width: var(--lumo-button-size-l);
+    height: var(--lumo-button-size-l);
+}

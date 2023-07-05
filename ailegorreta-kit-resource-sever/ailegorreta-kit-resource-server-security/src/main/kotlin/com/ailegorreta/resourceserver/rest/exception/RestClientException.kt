@@ -26,7 +26,7 @@ package com.ailegorreta.resourceserver.rest.exception
  * This class is to return a LegoSoft standard REST exception.
  *
  * @author rlh
- * @project : ailegorreta-resource-server
+ * @project : ailegorreta-kit-resource-server
  * @date June 2023
  *
  */

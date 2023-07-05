@@ -4,38 +4,352 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.33">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/build.gradle.kts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/images/AILLogoSmall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/images/SpringSecurity.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta/client/security/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta/client/security/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta/client/security/vaadin/LogoutUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta/client/security/vaadin/VaadinAwareSecurityContextHolderStrategy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta/client/security/vaadin/VaadinSessionConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/InstrucctionesSso.pages" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/InstrucctionesSso.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/Libraries.pages" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/NotasConfigSrv.pages" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/QuickReference.pages" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/WindowLayout.pages" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/documentation/WindowLayout.pdf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/images/AILLogoSmall.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/images/ClientIcon.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/src/main/kotlin/com/ailegorreta/commons/event/EventDTO.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/src/main/kotlin/com/ailegorreta/commons/event/EventErrorDTO.kt" afterDir="false" />
+    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.34">
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/Flow.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/Flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/Flow.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/FlowBootstrap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/FlowBootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/FlowClient.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/FlowClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/License.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/License.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/License.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/a-notification.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/a-vaadin-helper-bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/comboBoxConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/confirmDialogConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/contextMenuConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/contextMenuTargetConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/cookieConsentConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/copy-to-clipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/css-utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/data-generator-types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/data-generator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/datepickerConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/dialogConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/dndConnector-es6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/dndConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/example-data-bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/flow-component-renderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/gridConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/gridProConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/lit-renderer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/loginOverlayConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/lumo-includes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/material-includes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/menubarConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/messageListConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/notificationConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/selectConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/tooltip.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-big-decimal-field.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-dev-tools.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-dev-tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-dev-tools.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-grid-flow-selection-column.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-map/mapConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-map/synchronization/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-map/synchronization/layers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-map/synchronization/sources.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-map/synchronization/styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-map/synchronization/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-map/util.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-time-picker/helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/vaadin-time-picker/timepickerConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/jar-resources/virtualListConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/vaadin-featureflags.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/vaadin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/generated/vite-devmode.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/images/AILLogoSmall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/images/Vaadin.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/FlexBoxLayout.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/Initials.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/ListItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/SearchBar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/SearchBarCombo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/TwinColSelect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/ValidTextField.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/layout/size/Bottom.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/layout/size/Horizontal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/layout/size/Left.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/layout/size/Right.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/layout/size/Size.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/layout/size/Tall.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/layout/size/Top.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/layout/size/Uniform.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/layout/size/Vertical.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/ui/layout/size/Wide.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/BoxShadowBorders.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/FontSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/FontWeight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/IconSize.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/LineHeight.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/LumoStyles.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/SimpleDialog.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/TextColor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/UIUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/converter/BigDecimalToStringConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/converter/DoubleToStringConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/converter/LongToStringConverter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/css/AlignSelf.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/css/BorderRadius.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/css/BoxSizing.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/css/Display.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/css/FlexWrap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/css/Overflow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/css/PointerEvents.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/css/Position.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/css/Shadow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/css/TextAlign.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/css/TextOverflow.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/java/com/ailegorreta/client/components/utils/css/WhiteSpace.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/kotlin/com/ailegorreta/client/components/ui/KotlinComponents.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/kotlin/com/ailegorreta/client/components/ui/ShowFatalError.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/kotlin/com/ailegorreta/client/components/utils/converter/DateToFinancialDateConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/kotlin/com/ailegorreta/client/components/utils/converter/StringToBigDecimalConverter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/kotlin/com/ailegorreta/client/components/utils/formatters/Scale.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/src/components/search-bar-combo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/src/components/search-bar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/components/brand-expression.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/components/details-drawer-l.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/components/details-drawer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/components/floating-action-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/components/grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/components/list-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/components/view-frame.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/lumo/border-radius.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/lumo/brand-expression.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/lumo/button-size.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/lumo/icon-size.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/lumo/lumo-properties.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/lumo/margin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/lumo/padding.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/lumo/shadow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/lumo/spacing.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/lumo/typography.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/misc/box-shadow-borders.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/styles/shared-styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/src/main/resources/META-INF/resources/frontend/swipe-away.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/Flow.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/Flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/Flow.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/FlowBootstrap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/FlowBootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/FlowClient.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/FlowClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/License.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/License.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/License.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/a-notification.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/a-vaadin-helper-bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/comboBoxConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/confirmDialogConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/contextMenuConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/contextMenuTargetConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/copy-to-clipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/css-utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/data-generator-types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/data-generator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/datepickerConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/dialogConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/dndConnector-es6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/dndConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/example-data-bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/flow-component-renderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/gridConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/lit-renderer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/loginOverlayConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/lumo-includes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/material-includes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/menubarConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/messageListConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/notificationConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/selectConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/tooltip.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/vaadin-big-decimal-field.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/vaadin-dev-tools.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/vaadin-dev-tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/vaadin-dev-tools.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/vaadin-grid-flow-selection-column.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/vaadin-time-picker/helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/vaadin-time-picker/timepickerConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/jar-resources/virtualListConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/vaadin-featureflags.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/vaadin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/generated/vite-devmode.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/images/AILLogoSmall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/images/Dataproviders.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/java/com/ailegorreta/client/dataproviders/DataProviderUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/java/com/ailegorreta/client/dataproviders/FilterablePageableHierarchicalDataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/java/com/ailegorreta/client/dataproviders/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/java/com/ailegorreta/client/dataproviders/PageableHierarchicalDataProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/java/com/ailegorreta/client/dataproviders/events/CancelEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/java/com/ailegorreta/client/dataproviders/events/DeleteEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/java/com/ailegorreta/client/dataproviders/events/SaveEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/java/com/ailegorreta/client/dataproviders/events/SelectEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/java/com/ailegorreta/client/dataproviders/exceptions/AccessDeniedException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/java/com/ailegorreta/client/dataproviders/exceptions/DeleteValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/java/com/ailegorreta/client/dataproviders/exceptions/SaveValidationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/java/com/ailegorreta/client/dataproviders/exceptions/WebClientException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/kotlin/com/ailegorreta/client/dataproviders/service/InMemoryService.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/src/main/resources/META-INF/resources/frontend/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/Flow.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/Flow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/Flow.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/FlowBootstrap.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/FlowBootstrap.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/FlowClient.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/FlowClient.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/License.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/License.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/License.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/README" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/a-notification.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/a-vaadin-helper-bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/com/github/appreciated/apexcharts/apexcharts-wrapper-styles.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/com/github/appreciated/apexcharts/apexcharts-wrapper.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/comboBoxConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/confirmDialogConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/contextMenuConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/contextMenuTargetConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/copy-to-clipboard.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/css-utils.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/data-generator-types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/data-generator.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/datepickerConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/dialogConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/dndConnector-es6.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/dndConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/example-data-bundle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/flow-component-renderer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/gridConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/html/htmlimport.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/index.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/index.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/lit-renderer.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/loginOverlayConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/lumo-includes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/material-includes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/menubarConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/messageListConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/notificationConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/selectConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/src/components/search-bar-combo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/src/components/search-bar.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/components/app-bar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/components/brand-expression.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/components/details-drawer-l.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/components/details-drawer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/components/floating-action-button.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/components/grid.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/components/list-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/components/navi-drawer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/components/navi-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/components/navi-menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/components/tab-bar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/components/view-frame.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/lumo/border-radius.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/lumo/brand-expression.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/lumo/button-size.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/lumo/icon-size.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/lumo/lumo-properties.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/lumo/margin.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/lumo/padding.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/lumo/shadow.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/lumo/spacing.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/lumo/typography.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/misc/box-shadow-borders.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/shared-styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/styles/views/statistics.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/swipe-away.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/tooltip.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/vaadin-big-decimal-field.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/vaadin-dev-tools.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/vaadin-dev-tools.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/vaadin-dev-tools.js.map" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/vaadin-grid-flow-selection-column.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/vaadin-time-picker/helpers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/vaadin-time-picker/timepickerConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/jar-resources/virtualListConnector.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/vaadin-featureflags.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/vaadin.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/generated/vite-devmode.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/frontend/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/images/AILLogoSmall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/images/VaadinNavigation.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/java/com/ailegorreta/client/navigation/detailsdrawer/DetailsDrawer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/java/com/ailegorreta/client/navigation/detailsdrawer/DetailsDrawerFooter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/java/com/ailegorreta/client/navigation/detailsdrawer/DetailsDrawerHeader.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/java/com/ailegorreta/client/navigation/navigation/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/java/com/ailegorreta/client/navigation/navigation/drawer/BrandExpression.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/java/com/ailegorreta/client/navigation/navigation/drawer/NaviDrawer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/java/com/ailegorreta/client/navigation/navigation/drawer/NaviItem.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/java/com/ailegorreta/client/navigation/navigation/drawer/NaviMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/java/com/ailegorreta/client/navigation/navigation/tab/ClosableNaviTab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/java/com/ailegorreta/client/navigation/navigation/tab/NaviTab.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/java/com/ailegorreta/client/navigation/navigation/tab/NaviTabs.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/resources/META-INF/resources/frontend/styles/components/app-bar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/resources/META-INF/resources/frontend/styles/components/navi-drawer.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/resources/META-INF/resources/frontend/styles/components/navi-item.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/resources/META-INF/resources/frontend/styles/components/navi-menu.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/resources/META-INF/resources/frontend/styles/components/tab-bar.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/src/main/resources/META-INF/resources/frontend/styles/shared-styles.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/build.gradle.kts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/images/AILLogoSmall.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/images/Neo4jIcon.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/src/main/java/com/ailegorreta/data/neo4j/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/src/main/java/com/ailegorreta/data/neo4j/gql/directives/UpperCaseDirectiveWiring.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/src/main/java/com/ailegorreta/data/neo4j/gql/scalars/BigDecimalScalar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/src/main/java/com/ailegorreta/data/neo4j/gql/scalars/InstantScalar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/src/main/java/com/ailegorreta/data/neo4j/gql/scalars/LocalDateScalar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/src/main/java/com/ailegorreta/data/neo4j/gql/scalars/LocalDateTimeScalar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/src/main/java/com/ailegorreta/data/neo4j/gql/scalars/UUIDScalar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/src/main/java/com/ailegorreta/data/neo4j/querydsl/PredicateDate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/src/main/kotlin/com/ailegorreta/data/neo4j/service/ServiceUtils.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/java/com/ailegorreta/resourceserver/rest/WebClientFilter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta/client/security/config/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta/client/security/config/SecurityConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/src/main/kotlin/com/ailegorreta/commons/event/EventGraphqlError.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/src/main/kotlin/com/ailegorreta/commons/event/EventGraphqlError.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/src/main/kotlin/com/ailegorreta/commons/utils/ApplicationContextProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/src/main/java/com/ailegorreta/commons/utils/ApplicationContextProvider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/src/main/kotlin/com/ailegorreta/commons/utils/FormattingUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/src/main/java/com/ailegorreta/commons/utils/FormattingUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-security/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-security/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/rest/RestCaller.java" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/java/com/ailegorreta/resourceserver/rest/RestCaller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/rest/RestCallerConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/java/com/ailegorreta/resourceserver/rest/RestCallerConfiguration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/rest/WebClientFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/rest/config/WebClientConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/java/com/ailegorreta/resourceserver/rest/config/WebClientConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/rest/exception/RestClientException.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/rest/exception/RestClientException.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/rest/exception/ServiceException.java" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/java/com/ailegorreta/resourceserver/rest/exception/ServiceException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/security/config/SecurityServiceConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/java/com/ailegorreta/resourceserver/security/config/SecurityServiceConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/utils/UserContext.java" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/java/com/ailegorreta/resourceserver/utils/UserContext.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/utils/UserContextFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/java/com/ailegorreta/resourceserver/utils/UserContextFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/kotlin/com/ailegorreta/resourceserver/utils/UserContextHolder.java" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/java/com/ailegorreta/resourceserver/utils/UserContextHolder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -78,6 +392,18 @@
         <task path="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-security">
           <activation />
         </task>
+        <task path="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ailegorreta-kit-data">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -88,34 +414,26 @@
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ailegorreta-kit" type="f1a62948:ProjectNode" />
-                <item name="ailegorreta-kit-commons" type="2d1252cf:ModuleNode" />
+                <item name="ailegorreta-kit-client" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ailegorreta-kit" type="f1a62948:ProjectNode" />
-                <item name="ailegorreta-kit-commons" type="2d1252cf:ModuleNode" />
-                <item name="ailegorreta-kit-commons-event" type="2d1252cf:ModuleNode" />
+                <item name="ailegorreta-kit-client" type="2d1252cf:ModuleNode" />
+                <item name="ailegorreta-kit-client-components" type="2d1252cf:ModuleNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ailegorreta-kit" type="f1a62948:ProjectNode" />
-                <item name="ailegorreta-kit-commons" type="2d1252cf:ModuleNode" />
-                <item name="ailegorreta-kit-commons-event" type="2d1252cf:ModuleNode" />
+                <item name="ailegorreta-kit-client" type="2d1252cf:ModuleNode" />
+                <item name="ailegorreta-kit-client-components" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
               </path>
               <path>
                 <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
                 <item name="ailegorreta-kit" type="f1a62948:ProjectNode" />
-                <item name="ailegorreta-kit-commons" type="2d1252cf:ModuleNode" />
-                <item name="ailegorreta-kit-commons-event" type="2d1252cf:ModuleNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="ailegorreta-kit" type="f1a62948:ProjectNode" />
-                <item name="ailegorreta-kit-commons" type="2d1252cf:ModuleNode" />
-                <item name="ailegorreta-kit-commons-event" type="2d1252cf:ModuleNode" />
+                <item name="ailegorreta-kit-client" type="2d1252cf:ModuleNode" />
+                <item name="ailegorreta-kit-client-components" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
@@ -129,8 +447,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -153,7 +471,7 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/rlh/LocalDeveloper/ialegorreta-mktplace/ailegorreta-kit/ailegorreta-kit-client/ailegorreta-kit-client-security/src/main/java/com/ailegorreta&quot;,
+    &quot;last_directory_selection&quot;: &quot;/Users/rlh/LocalDeveloper/ialegorreta-mktplace/ailegorreta-kit/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/src/main/java/com/ailegorreta/data/neo4j&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -163,7 +481,7 @@
     &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
     &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;85403ee1de7aeeb2797b30e4f13b7985&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;6fe5a49e85a488e669e8ecf87599601d&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -171,15 +489,23 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
     </key>
+    <key name="MoveKotlinTopLevelDeclarationsDialog.RECENTS_KEY">
+      <recent name="com.ailegorreta.client.dataproviders.service" />
+      <recent name="com.ailegorreta.resourceserver.rest.exception" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.ailegorreta.commons.utils" />
+      <recent name="com.ailegorreta.resourceserver.utils" />
+      <recent name="com.ailegorreta.resourceserver.security.config" />
+      <recent name="com.ailegorreta.resourceserver.rest.config" />
+      <recent name="com.ailegorreta.resourceserver.rest" />
+      <recent name="com.ailegorreta.resourceserver.rest.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [publish]">
-    <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+  <component name="RunManager" selected="Gradle.ailegorreta-kit:ailegorreta-kit-client:ailegorreta-kit-client-components [publish]">
+    <configuration name="ailegorreta-kit:ailegorreta-kit-client:ailegorreta-kit-client-components [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -198,32 +524,10 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ailegorreta-kit:ailegorreta-kit-client:ailegorreta-kit-client-components [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="clean" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -242,10 +546,10 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-utils [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ailegorreta-kit:ailegorreta-kit-client:ailegorreta-kit-client-navigation [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -264,10 +568,32 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
-    <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-utils [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration name="ailegorreta-kit:ailegorreta-kit-client:ailegorreta-kit-client-navigation [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="ailegorreta-kit:ailegorreta-kit-client:ailegorreta-kit-client-navigation [publish]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation" />
         <option name="externalSystemIdString" value="GRADLE" />
         <option name="scriptParameters" />
         <option name="taskDescriptions">
@@ -288,11 +614,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [publish]" />
-        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [build]" />
-        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [clean]" />
-        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-utils [publish]" />
-        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-utils [build]" />
+        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-client:ailegorreta-kit-client-components [publish]" />
+        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-client:ailegorreta-kit-client-navigation [publish]" />
+        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-client:ailegorreta-kit-client-navigation [build]" />
+        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-client:ailegorreta-kit-client-navigation [clean]" />
+        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-client:ailegorreta-kit-client-components [build]" />
       </list>
     </recent_temporary>
   </component>
@@ -328,7 +654,9 @@
       <workItem from="1687992887401" duration="16480000" />
       <workItem from="1688080543974" duration="927000" />
       <workItem from="1688083479152" duration="2692000" />
-      <workItem from="1688147862947" duration="2977000" />
+      <workItem from="1688147862947" duration="15357000" />
+      <workItem from="1688177988340" duration="304000" />
+      <workItem from="1688410861782" duration="17006000" />
     </task>
     <task id="LOCAL-00001" summary="2.0.0">
       <created>1686856963488</created>
@@ -589,7 +917,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688148487187</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="2.0.34">
+      <created>1688150890834</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1688150890834</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -611,7 +946,6 @@
       <path value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="2.0.9" />
     <MESSAGE value="2.0.10" />
     <MESSAGE value="2.0.11" />
     <MESSAGE value="2.0.12" />
@@ -636,6 +970,17 @@
     <MESSAGE value="2.0.31" />
     <MESSAGE value="2.0.32" />
     <MESSAGE value="2.0.33" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0.33" />
+    <MESSAGE value="2.0.34" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0.34" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/src/main/java/com/ailegorreta/resourceserver/rest/WebClientFilter.java</url>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
