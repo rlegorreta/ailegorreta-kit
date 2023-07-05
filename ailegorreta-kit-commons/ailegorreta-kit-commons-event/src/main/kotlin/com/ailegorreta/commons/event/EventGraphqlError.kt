@@ -35,7 +35,7 @@ data class EventGraphqlError constructor (val errors: Collection<Map<String, Any
                                           var extraData: MutableMap<String, Any>? = null): HasLogger {
 
     fun addExtraData( key: String, data: Any) {
-        logger.info("Hola nerd!!!")
+        logger.info("Hola nerd!!")
         if (extraData == null)
             extraData = mutableMapOf(key to data)
         else
