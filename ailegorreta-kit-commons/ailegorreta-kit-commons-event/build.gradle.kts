@@ -17,13 +17,6 @@ configurations {
 }
 
 repositories {
-    maven {
-        url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
-        credentials {
-            username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR") ?: "rlegorreta"
-            password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
-        }
-    }
     mavenLocal()
     mavenCentral()
     maven { url = uri("https://repo.spring.io/snapshot") }
