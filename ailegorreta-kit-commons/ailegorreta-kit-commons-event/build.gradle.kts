@@ -17,21 +17,15 @@ configurations {
 }
 
 repositories {
-    mavenLocal()
+    // mavenLocal()
     mavenCentral()
     maven { url = uri("https://repo.spring.io/snapshot") }
     maven {
         name = "GitHubAiLegorretaPackages"
         url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
-        credentials(HttpHeaderCredentials::class) {
-            name = "Authorization"
-            if (System.getenv("READ_TOKEN").isNullOrBlank())
-                value = "Bearer ${project.findProperty("gpr.token") as String}"
-            else
-                value = "Bearer ${System.getenv("READ_TOKEN")}"
-        }
-        authentication {
-            create<HttpHeaderAuthentication>("header")
+        credentials {
+            username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_USER") ?: "rlegorreta"
+            password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
         }
     }
 }

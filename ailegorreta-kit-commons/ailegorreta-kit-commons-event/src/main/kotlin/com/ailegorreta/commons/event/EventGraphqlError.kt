@@ -22,6 +22,7 @@
 */
 package com.ailegorreta.commons.event
 
+import com.ailegorreta.commons.utils.HasLogger
 /**
  * Data class for Events when a Graphql error exists and permits to add new information
  * like the operation number.
@@ -31,9 +32,10 @@ package com.ailegorreta.commons.event
  * @date June, 2023
  */
 data class EventGraphqlError constructor (val errors: Collection<Map<String, Any>>? = null,
-                                          var extraData: MutableMap<String, Any>? = null) {
+                                          var extraData: MutableMap<String, Any>? = null): HasLogger {
 
     fun addExtraData( key: String, data: Any) {
+        logger.info("Hola")
         if (extraData == null)
             extraData = mutableMapOf(key to data)
         else

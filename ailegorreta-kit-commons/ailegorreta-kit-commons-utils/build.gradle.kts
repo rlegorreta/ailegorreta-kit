@@ -89,8 +89,9 @@ publishing {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
             credentials {
-                username = System.getenv("GITHUB_ACTOR") ?: "rlegorreta"
-                password = System.getenv("GITHUB_TOKEN") ?: "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"
+                username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_USER") ?: "rlegorreta"
+                password = (project.findProperty("gpr.key") ?: System.getenv("GITHUB_TOKEN") ?:
+                            "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") as String
             }
         }
     }
