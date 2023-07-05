@@ -32,10 +32,9 @@ import com.ailegorreta.commons.utils.HasLogger
  * @date June, 2023
  */
 data class EventGraphqlError constructor (val errors: Collection<Map<String, Any>>? = null,
-                                          var extraData: MutableMap<String, Any>? = null): HasLogger {
+                                          var extraData: MutableMap<String, Any>? = null) {
 
     fun addExtraData( key: String, data: Any) {
-        logger.info("Hola nerd!")
         if (extraData == null)
             extraData = mutableMapOf(key to data)
         else
