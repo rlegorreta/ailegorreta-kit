@@ -4,13 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.42">
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/gradle.properties" afterDir="false" />
+    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.57">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/gradle.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/src/main/kotlin/com/ailegorreta/commons/event/EventGraphqlError.kt" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/src/main/kotlin/com/ailegorreta/commons/event/EventGraphqlError.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-security/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-security/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/gradle.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,51 +194,7 @@
       <recent name="com.ailegorreta.resourceserver.rest.exception" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [build]">
-    <configuration name="ailegorreta-kit:ailegorreta-kit-client:ailegorreta-kit-client-dataproviders [publishAllPublicationsToGitHubPackagesRepository]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publishAllPublicationsToGitHubPackagesRepository" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
-      <method v="2" />
-    </configuration>
-    <configuration name="ailegorreta-kit:ailegorreta-kit-commons [publishAllPublicationsToGitHubPackagesRepository]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-commons" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="publishAllPublicationsToGitHubPackagesRepository" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <ForceTestExec>false</ForceTestExec>
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [publishAllPublicationsToGitHubPackagesRepository]">
     <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -277,6 +239,50 @@
       <ForceTestExec>false</ForceTestExec>
       <method v="2" />
     </configuration>
+    <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [publishAllPublicationsToGitHubPackagesRepository]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishAllPublicationsToGitHubPackagesRepository" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
+    <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [publishAllPublicationsToMavenLocalRepository]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="publishAllPublicationsToMavenLocalRepository" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <ForceTestExec>false</ForceTestExec>
+      <method v="2" />
+    </configuration>
     <configuration name="ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-utils [publishAllPublicationsToGitHubPackagesRepository]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -301,11 +307,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [publishAllPublicationsToGitHubPackagesRepository]" />
+        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [publishAllPublicationsToMavenLocalRepository]" />
         <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [build]" />
         <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-event [clean]" />
         <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons:ailegorreta-kit-commons-utils [publishAllPublicationsToGitHubPackagesRepository]" />
-        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-commons [publishAllPublicationsToGitHubPackagesRepository]" />
-        <item itemvalue="Gradle.ailegorreta-kit:ailegorreta-kit-client:ailegorreta-kit-client-dataproviders [publishAllPublicationsToGitHubPackagesRepository]" />
       </list>
     </recent_temporary>
   </component>
@@ -345,84 +351,8 @@
       <workItem from="1688177988340" duration="304000" />
       <workItem from="1688410861782" duration="23345000" />
       <workItem from="1688572480409" duration="4223000" />
-      <workItem from="1688586191013" duration="471000" />
-    </task>
-    <task id="LOCAL-00001" summary="2.0.0">
-      <created>1686856963488</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1686856963488</updated>
-    </task>
-    <task id="LOCAL-00002" summary="2.0.0">
-      <created>1686857263694</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1686857263694</updated>
-    </task>
-    <task id="LOCAL-00003" summary="2.0.0">
-      <created>1686857285303</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1686857285303</updated>
-    </task>
-    <task id="LOCAL-00004" summary="2.0.0">
-      <created>1686857585566</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1686857585566</updated>
-    </task>
-    <task id="LOCAL-00005" summary="2.0.1">
-      <created>1686858111672</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1686858111672</updated>
-    </task>
-    <task id="LOCAL-00006" summary="2.0.2">
-      <created>1686858504833</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1686858504833</updated>
-    </task>
-    <task id="LOCAL-00007" summary="2.0.3">
-      <created>1686859018028</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1686859018028</updated>
-    </task>
-    <task id="LOCAL-00008" summary="2.0.4">
-      <created>1686859462591</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1686859462591</updated>
-    </task>
-    <task id="LOCAL-00009" summary="2.0.5">
-      <created>1686866896768</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1686866896768</updated>
-    </task>
-    <task id="LOCAL-00010" summary="2.0.6">
-      <created>1686867000214</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1686867000214</updated>
-    </task>
-    <task id="LOCAL-00011" summary="2.0.7">
-      <created>1686867448477</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1686867448477</updated>
+      <workItem from="1688586191013" duration="2995000" />
+      <workItem from="1688594955824" duration="6087000" />
     </task>
     <task id="LOCAL-00012" summary="2.0.8">
       <created>1686867831848</created>
@@ -669,7 +599,105 @@
       <option name="project" value="LOCAL" />
       <updated>1688584179109</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="2.0.43">
+      <created>1688586775593</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1688586775593</updated>
+    </task>
+    <task id="LOCAL-00048" summary="2.0.44">
+      <created>1688587714033</created>
+      <option name="number" value="00048" />
+      <option name="presentableId" value="LOCAL-00048" />
+      <option name="project" value="LOCAL" />
+      <updated>1688587714033</updated>
+    </task>
+    <task id="LOCAL-00049" summary="2.0.45">
+      <created>1688594116363</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1688594116363</updated>
+    </task>
+    <task id="LOCAL-00050" summary="2.0.46">
+      <created>1688595047356</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1688595047357</updated>
+    </task>
+    <task id="LOCAL-00051" summary="2.0.48">
+      <created>1688595568609</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1688595568609</updated>
+    </task>
+    <task id="LOCAL-00052" summary="2.0.49">
+      <created>1688595934684</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1688595934684</updated>
+    </task>
+    <task id="LOCAL-00053" summary="2.0.50">
+      <created>1688596470989</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1688596470989</updated>
+    </task>
+    <task id="LOCAL-00054" summary="2.0.51">
+      <created>1688597108569</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1688597108569</updated>
+    </task>
+    <task id="LOCAL-00055" summary="2.0.53">
+      <created>1688597405748</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1688597405748</updated>
+    </task>
+    <task id="LOCAL-00056" summary="2.0.53">
+      <created>1688598013484</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1688598013484</updated>
+    </task>
+    <task id="LOCAL-00057" summary="2.0.54">
+      <created>1688598836103</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1688598836103</updated>
+    </task>
+    <task id="LOCAL-00058" summary="2.0.545">
+      <created>1688599109005</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1688599109005</updated>
+    </task>
+    <task id="LOCAL-00059" summary="2.0.56">
+      <created>1688599563870</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1688599563870</updated>
+    </task>
+    <task id="LOCAL-00060" summary="2.0.57">
+      <created>1688600056727</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1688600056727</updated>
+    </task>
+    <option name="localTasksCounter" value="61" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -691,19 +719,6 @@
       <path value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="2.0.18" />
-    <MESSAGE value="2.0.19" />
-    <MESSAGE value="2.0.20" />
-    <MESSAGE value="2.0.21" />
-    <MESSAGE value="2.0.22" />
-    <MESSAGE value="2.0.23" />
-    <MESSAGE value="2.0.24" />
-    <MESSAGE value="2.0.25" />
-    <MESSAGE value="2.0.26" />
-    <MESSAGE value="2.0.27" />
-    <MESSAGE value="2.0.28" />
-    <MESSAGE value="2.0.29" />
-    <MESSAGE value="2.0.30" />
     <MESSAGE value="2.0.31" />
     <MESSAGE value="2.0.32" />
     <MESSAGE value="2.0.33" />
@@ -716,7 +731,20 @@
     <MESSAGE value="2.0.40" />
     <MESSAGE value="2.0.41" />
     <MESSAGE value="2.0.42" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0.42" />
+    <MESSAGE value="2.0.43" />
+    <MESSAGE value="2.0.44" />
+    <MESSAGE value="2.0.45" />
+    <MESSAGE value="2.0.46" />
+    <MESSAGE value="2.0.48" />
+    <MESSAGE value="2.0.49" />
+    <MESSAGE value="2.0.50" />
+    <MESSAGE value="2.0.51" />
+    <MESSAGE value="2.0.53" />
+    <MESSAGE value="2.0.54" />
+    <MESSAGE value="2.0.545" />
+    <MESSAGE value="2.0.56" />
+    <MESSAGE value="2.0.57" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0.57" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

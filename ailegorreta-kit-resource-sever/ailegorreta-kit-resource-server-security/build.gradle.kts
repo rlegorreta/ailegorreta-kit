@@ -94,7 +94,7 @@ publishing {
             url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
             credentials {
                 username = System.getenv("GITHUB_ACTOR") ?: "rlegorreta"
-                password = System.getenv("GITHUB_TOKEN") ?: "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"
+                password = System.getenv("GITHUB_TOKEN")
             }
         }
     }
