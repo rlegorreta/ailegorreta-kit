@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.39">
-      <change afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/gradle.properties" afterDir="false" />
+    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.40">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/gradle.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/gradle.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -134,27 +134,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;corretto-17&quot;,
-    &quot;last_directory_selection&quot;: &quot;/Users/rlh/LocalDeveloper/ialegorreta-mktplace/ailegorreta-kit/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/src/main/java/com/ailegorreta/data/neo4j&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;Errors&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;6fe5a49e85a488e669e8ecf87599601d&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "jdk.selected.JAVA_MODULE": "corretto-17",
+    "last_directory_selection": "/Users/rlh/LocalDeveloper/ialegorreta-mktplace/ailegorreta-kit/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/src/main/java/com/ailegorreta/data/neo4j",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "Errors",
+    "spring.configuration.checksum": "ce9c95745a45737e9471757413c62df1",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -326,7 +326,8 @@
       <workItem from="1688083479152" duration="2692000" />
       <workItem from="1688147862947" duration="15357000" />
       <workItem from="1688177988340" duration="304000" />
-      <workItem from="1688410861782" duration="23089000" />
+      <workItem from="1688410861782" duration="23345000" />
+      <workItem from="1688572480409" duration="995000" />
     </task>
     <task id="LOCAL-00001" summary="2.0.0">
       <created>1686856963488</created>
@@ -629,7 +630,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688522883442</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="2.0.40">
+      <created>1688523428342</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1688523428342</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -651,7 +659,6 @@
       <path value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="2.0.15" />
     <MESSAGE value="2.0.16" />
     <MESSAGE value="2.0.17" />
     <MESSAGE value="2.0.18" />
@@ -676,7 +683,8 @@
     <MESSAGE value="2.0.37" />
     <MESSAGE value="2.0.38" />
     <MESSAGE value="2.0.39" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0.39" />
+    <MESSAGE value="2.0.40" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0.40" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
