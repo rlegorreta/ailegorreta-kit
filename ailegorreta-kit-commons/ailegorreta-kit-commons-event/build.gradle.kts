@@ -25,7 +25,10 @@ repositories {
         url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
         credentials(HttpHeaderCredentials::class) {
             name = "Authorization"
-            value = "Bearer ${project.findProperty("gpr.token") as String}"
+            if (System.getenv("READ_TOKEN").isNullOrBlank())
+                value = "Bearer ${project.findProperty("gpr.token") as String}"
+            else
+                value = "Bearer ${System.getenv("READ_TOKEN")}"
         }
         authentication {
             create<HttpHeaderAuthentication>("header")
