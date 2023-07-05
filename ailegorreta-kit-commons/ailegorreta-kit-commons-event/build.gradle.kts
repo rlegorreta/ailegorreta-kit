@@ -20,6 +20,13 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven { url = uri("https://repo.spring.io/snapshot") }
+    maven {
+        url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
+        credentials {
+            username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_ACTOR") ?: "rlegorreta"
+            password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
+        }
+    }
 }
 
 extra["springCloudVersion"] = "2022.0.3"
@@ -35,7 +42,7 @@ dependencies {
 
     implementation("com.fasterxml.jackson.core:jackson-databind:${property("jacksonVersion")}")
 
-    implementation("com.ailegorreta:ailegorreta-kit-commons-utils:${property("ailegorreta-kit-version")}")
+    implementation(project(":ailegorreta-kit-commons:ailegorreta-kit-commons-utils"))
 
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
