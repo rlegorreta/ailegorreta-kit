@@ -20,6 +20,14 @@ repositories {
     mavenLocal()
     mavenCentral()
     maven { url = uri("https://repo.spring.io/snapshot") }
+    maven {
+        name = "GitHubAiLegorretaPackages"
+        url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
+        credentials {
+            username = System.getenv("GITHUB_ACTOR") ?: "rlegorreta"
+            password = System.getenv("GITHUB_TOKEN") ?: "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"
+        }
+    }
 }
 
 extra["springCloudVersion"] = "2022.0.3"

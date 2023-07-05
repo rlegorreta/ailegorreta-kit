@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.35">
+    <list default="true" id="2da0feba-1893-45e6-8df7-059535a95c51" name="Changes" comment="2.0.36">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-components/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-dataproviders/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-navigation/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-client/ailegorreta-kit-client-security/build.gradle.kts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-event/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-security/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-security/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security/build.gradle.kts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -114,7 +105,7 @@
                 <item name="ailegorreta-kit-client" type="2d1252cf:ModuleNode" />
                 <item name="ailegorreta-kit-client-dataproviders" type="2d1252cf:ModuleNode" />
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
+                <item name="publishing" type="c8890929:TasksNode$1" />
               </path>
             </expand>
             <select />
@@ -335,7 +326,7 @@
       <workItem from="1688083479152" duration="2692000" />
       <workItem from="1688147862947" duration="15357000" />
       <workItem from="1688177988340" duration="304000" />
-      <workItem from="1688410861782" duration="20751000" />
+      <workItem from="1688410861782" duration="21331000" />
     </task>
     <task id="LOCAL-00001" summary="2.0.0">
       <created>1686856963488</created>
@@ -610,7 +601,14 @@
       <option name="project" value="LOCAL" />
       <updated>1688517782084</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="2.0.36">
+      <created>1688521191524</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1688521191524</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -632,7 +630,6 @@
       <path value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils" />
       <path value="$PROJECT_DIR$/.." />
     </ignored-roots>
-    <MESSAGE value="2.0.11" />
     <MESSAGE value="2.0.12" />
     <MESSAGE value="2.0.13" />
     <MESSAGE value="2.0.14" />
@@ -657,7 +654,8 @@
     <MESSAGE value="2.0.33" />
     <MESSAGE value="2.0.34" />
     <MESSAGE value="2.0.35" />
-    <option name="LAST_COMMIT_MESSAGE" value="2.0.35" />
+    <MESSAGE value="2.0.36" />
+    <option name="LAST_COMMIT_MESSAGE" value="2.0.36" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
