@@ -25,7 +25,7 @@ repositories {
         url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
         credentials {
             username = System.getenv("GITHUB_ACTOR") ?: "rlegorreta"
-            password = System.getenv("GITHUB_TOKEN") ?: "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"
+            password = System.getenv("GITHUB_TOKEN") ?: "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"
         }
     }
 }
