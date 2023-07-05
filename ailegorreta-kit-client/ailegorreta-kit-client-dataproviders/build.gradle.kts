@@ -61,7 +61,7 @@ publishing {
     publications {
         create<MavenPublication>("mavenJava") {
             groupId = "com.ailegorreta"
-            artifactId = "ailegorreta-kit-client-security"
+            artifactId = "ailegorreta-kit-client-dataproviders"
             from(components["java"])
             versionMapping {
                 usage("java-api") {
@@ -72,7 +72,7 @@ publishing {
                 }
             }
             pom {
-                name.set("ailegorreta-kit-client-security")
+                name.set("ailegorreta-kit-client-dataproviders")
                 description.set("Classes to implement security for front-end microservices")
                 url.set("http://www.legosoft.com.mx")
                 properties.set(mapOf(
@@ -93,16 +93,14 @@ publishing {
     repositories {
         mavenLocal()
 
-        /*
         maven {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
             credentials {
                 username = System.getenv("GITHUB_ACTOR") ?: "rlegorreta"
-                password = System.getenv("GITHUB_TOKEN") ?: "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"
+                password = System.getenv("GITHUB_TOKEN") ?: "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"
             }
         }
-         */
     }
 }
 
