@@ -17,7 +17,7 @@ configurations {
 }
 
 repositories {
-    // mavenLocal()
+    mavenLocal()
     mavenCentral()
     maven { url = uri("https://repo.spring.io/snapshot") }
     maven {
