@@ -21,7 +21,7 @@ repositories {
     mavenCentral()
     maven { url = uri("https://repo.spring.io/snapshot") }
     maven {
-        name = "GitHubAiLegorretaPackages"
+        name = "GitHubPackages"
         url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
         credentials {
             username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_USER") ?: "rlegorreta"
