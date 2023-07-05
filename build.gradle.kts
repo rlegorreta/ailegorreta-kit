@@ -2,7 +2,15 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 buildscript {
     repositories {
+        mavenLocal()
         mavenCentral()
+        maven {
+            url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
+            credentials {
+                username = project.findProperty("gpr.user") as String? ?: System.getenv("GITHUB_USER") ?: "rlegorreta"
+                password = project.findProperty("gpr.key") as String? ?: System.getenv("GITHUB_TOKEN")
+            }
+        }
     }
 }
 
