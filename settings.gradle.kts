@@ -19,6 +19,9 @@ findProject(":ailegorreta-kit-client:ailegorreta-kit-client-security")?.name = "
 include("ailegorreta-kit-data:ailegorreta-kit-data-neo4j")
 findProject(":ailegorreta-kit-data:ailegorreta-kit-data-neo4j")?.name = "ailegorreta-kit-data-neo4j"
 
+include("ailegorreta-kit-data:ailegorreta-kit-data-jpa")
+findProject(":ailegorreta-kit-data:ailegorreta-kit-data-jpa")?.name = "ailegorreta-kit-data-jpa"
+
 include("ailegorreta-kit-client:ailegorreta-kit-client-components")
 findProject(":ailegorreta-kit-client:ailegorreta-kit-client-components")?.name = "ailegorreta-kit-client-components"
 
@@ -27,3 +30,4 @@ findProject(":ailegorreta-kit-client:ailegorreta-kit-client-navigation")?.name =
 
 include("ailegorreta-kit-client:ailegorreta-kit-client-dataproviders")
 findProject(":ailegorreta-kit-client:ailegorreta-kit-client-dataproviders")?.name = "ailegorreta-kit-client-dataproviders"
+

@@ -20,15 +20,16 @@
  *
  *  Developed 2023 by LMASS Desarrolladores, S.C. www.lmass.com.mx
  */
-package com.ailegorreta.data.neo4j.gql.scalars;
+package com.ailegorreta.data.jpa.gql.scalars;
 
-import java.math.BigDecimal;
-import graphql.language.StringValue;
-import graphql.schema.*;
-import graphql.language.Value;
 import graphql.GraphQLContext;
 import graphql.execution.CoercedVariables;
+import graphql.language.StringValue;
+import graphql.language.Value;
+import graphql.schema.*;
 import org.jetbrains.annotations.NotNull;
+
+import java.math.BigDecimal;
 import java.util.Locale;
 
 /**
@@ -36,8 +37,8 @@ import java.util.Locale;
  * spring-graphql-querydsl. Is need more information use the link: https://github.com/hantsy/spring-graphql-sample
  *
  * @author: rlh
- * @project: ailegorreta-kit-data-neo4j
- * @date: June 2023
+ * @project: ailegorreta-kit-data-jpa
+ * @date: August 2023
  */
 public class BigDecimalScalar implements Coercing<BigDecimal, String> {
 
@@ -80,10 +81,13 @@ public class BigDecimalScalar implements Coercing<BigDecimal, String> {
             try {
                 return new BigDecimal(input.toString());
             } catch (Exception e) {
-                throw new CoercingParseLiteralException("Value is not a valid Big Decimal:" + e.getMessage());
+                throw new CoercingParseLiteralException("[" + input + "] Value is not a valid Big Decimal:" + e.getMessage());
             }
+        } else if (input instanceof graphql.language.IntValue) {
+            return new BigDecimal(((graphql.language.IntValue)input).getValue());
+        } else if (input instanceof graphql.language.FloatValue) {
+            return ((graphql.language.FloatValue)input).getValue();
         }
-        throw new CoercingParseLiteralException("Value is not a valid Big Decimal");
+        throw new CoercingParseLiteralException("Value is not a valid Big Decimal:" + input.getClass().getCanonicalName());
     }
 }
-

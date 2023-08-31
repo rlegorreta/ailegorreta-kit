@@ -1,3 +1,4 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 
 plugins {
     `java-library`
@@ -24,27 +25,32 @@ repositories {
 }
 
 extra["springCloudVersion"] = "2022.0.3"
+extra["queryDslVersion"] = "5.0.0"
 extra["ailegorretaVersion"] = "2.0.0"
+extra["jacksonVersion"] = "2.15.2"
 
 dependencies {
-    implementation("org.springframework.boot:spring-boot-starter-oauth2-client")
-    implementation("org.springframework.boot:spring-boot-starter-webflux")
-    implementation("org.springframework.cloud:spring-cloud-starter-loadbalancer")
+    implementation("org.springframework.boot:spring-boot-starter-data-jpa")
+    implementation("org.springframework.boot:spring-boot-starter-graphql")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
 
-    /* An HTML sanitizer to protect from HTML that can harm and compromiseVaadin */
-    implementation("com.googlecode.owasp-java-html-sanitizer:owasp-java-html-sanitizer:20200713.1")
+    implementation("com.querydsl:querydsl-core:${property("queryDslVersion")}")
+    implementation("com.querydsl","querydsl-jpa", "${property("queryDslVersion")}", "", "jakarta")
+    implementation("com.querydsl:querydsl-apt:${property("queryDslVersion")}")
 
-    implementation("org.apache.tomcat.embed:tomcat-embed-core:10.1.8")
     implementation("org.apache.commons:commons-lang3:3.12.0")
     implementation("org.slf4j:slf4j-api")
 
-    testImplementation("org.junit.jupiter:junit-jupiter-api:5.9.2")
-    testRuntimeOnly("org.junit.jupiter:junit-jupiter-engine:5.9.2")
+    implementation("com.fasterxml.jackson.core:jackson-databind:${property("jacksonVersion")}")
+
+    testImplementation(platform("org.junit:junit-bom:5.9.1"))
+    testImplementation("org.junit.jupiter:junit-jupiter")
 }
 
 dependencyManagement {
     imports {
         mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
+        mavenBom("com.querydsl:querydsl-apt:${property("queryDslVersion")}")
     }
 }
 
@@ -59,7 +65,7 @@ publishing {
     publications {
         create<MavenPublication>("mavenJava") {
             groupId = "com.ailegorreta"
-            artifactId = "ailegorreta-kit-commons-security"
+            artifactId = "ailegorreta-kit-data-jpa"
             from(components["java"])
             versionMapping {
                 usage("java-api") {
@@ -70,8 +76,8 @@ publishing {
                 }
             }
             pom {
-                name.set("ailegorreta-kit-commons-security")
-                description.set("Classes to implement security for front-end microservices, no Vaadin")
+                name.set("ailegorreta-kit-data-jpa")
+                description.set("General utilities access Spring Data JPA database")
                 url.set("http://www.legosoft.com.mx")
                 properties.set(mapOf(
                     "version" to "2.0.0"
@@ -91,7 +97,6 @@ publishing {
     repositories {
         mavenLocal()
 
-        /*
         maven {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
@@ -100,11 +105,24 @@ publishing {
                 password = System.getenv("GITHUB_TOKEN")
             }
         }
-
-         */
     }
 }
 
 tasks.getByName<Test>("test") {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions {
+        freeCompilerArgs += "-Xjsr305=strict"
+        jvmTarget = "17"
+    }
+}
+
+tasks.withType<JavaCompile> {
+    options.compilerArgs.add("-Xlint:deprecation")
+}
+
+tasks.test {
     useJUnitPlatform()
 }

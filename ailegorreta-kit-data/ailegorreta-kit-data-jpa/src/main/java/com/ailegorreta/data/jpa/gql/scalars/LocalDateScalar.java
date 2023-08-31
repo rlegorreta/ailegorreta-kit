@@ -16,19 +16,21 @@
  * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
  * POSSIBILITY OF SUCH DAMAGE.
  *
- *  BigDecimalScalar.java
+ *  LocalDateScalar.java
  *
  *  Developed 2023 by LMASS Desarrolladores, S.C. www.lmass.com.mx
  */
-package com.ailegorreta.data.neo4j.gql.scalars;
+package com.ailegorreta.data.jpa.gql.scalars;
 
-import java.math.BigDecimal;
-import graphql.language.StringValue;
-import graphql.schema.*;
-import graphql.language.Value;
 import graphql.GraphQLContext;
 import graphql.execution.CoercedVariables;
+import graphql.language.StringValue;
+import graphql.language.Value;
+import graphql.schema.*;
 import org.jetbrains.annotations.NotNull;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
 import java.util.Locale;
 
 /**
@@ -36,16 +38,16 @@ import java.util.Locale;
  * spring-graphql-querydsl. Is need more information use the link: https://github.com/hantsy/spring-graphql-sample
  *
  * @author: rlh
- * @project: ailegorreta-kit-data-neo4j
- * @date: June 2023
+ * @project: ailegorreta-kit-data-jpa
+ * @date: August 2023
  */
-public class BigDecimalScalar implements Coercing<BigDecimal, String> {
+public class LocalDateScalar implements Coercing<LocalDate, String> {
 
     public static GraphQLScalarType graphQLScalarType() {
         return GraphQLScalarType.newScalar()
-                .name("BigDecimal")
-                .description("BigDecimal type")
-                .coercing(new BigDecimalScalar())
+                .name("LocalDate")
+                .description("LocalDate type")
+                .coercing(new LocalDateScalar())
                 .build();
     }
 
@@ -53,37 +55,40 @@ public class BigDecimalScalar implements Coercing<BigDecimal, String> {
     public String serialize(@NotNull Object dataFetcherResult,
                             @NotNull GraphQLContext graphQLContext,
                             @NotNull Locale locale) throws CoercingSerializeException {
-        if (dataFetcherResult instanceof BigDecimal) {
-            return dataFetcherResult.toString();
-        } else {
-            throw new CoercingSerializeException("Not a valid BigDecimal");
-        }
-    }
-
-    @Override
-    public BigDecimal parseValue(@NotNull Object input,
-                                 @NotNull GraphQLContext graphQLContext,
-                                 @NotNull Locale locale) throws CoercingParseValueException {
-        try {
-            return new BigDecimal(input.toString());
-        } catch (Exception e) {
-            throw new CoercingSerializeException("Not a valid BigDecimal:" + e.getMessage());
-        }
-    }
-
-    @Override
-    public BigDecimal parseLiteral(@NotNull Value<?> input,
-                                   @NotNull CoercedVariables variables,
-                                   @NotNull GraphQLContext graphQLContext,
-                                   @NotNull Locale locale) throws CoercingParseLiteralException {
-        if (input instanceof StringValue) {
+        if (dataFetcherResult instanceof LocalDate) {
             try {
-                return new BigDecimal(input.toString());
+                return ((LocalDate) dataFetcherResult).format(DateTimeFormatter.ISO_DATE);
             } catch (Exception e) {
-                throw new CoercingParseLiteralException("Value is not a valid Big Decimal:" + e.getMessage());
+                throw new CoercingSerializeException("Not a valid Date:" + e.getMessage());
             }
+        } else {
+            throw new CoercingSerializeException("Not a valid Date");
         }
-        throw new CoercingParseLiteralException("Value is not a valid Big Decimal");
+    }
+
+    @Override
+    public LocalDate parseValue(@NotNull Object input,
+                                @NotNull GraphQLContext graphQLContext,
+                                @NotNull Locale locale) throws CoercingParseValueException {
+        try {
+            return LocalDate.parse(input.toString(), DateTimeFormatter.ISO_DATE);
+        } catch (Exception e) {
+            throw new CoercingSerializeException("Not a valid Date:" + e.getMessage());
+        }
+    }
+
+    @Override
+    public LocalDate parseLiteral(@NotNull Value<?> input,
+                                  @NotNull CoercedVariables variables,
+                                  @NotNull GraphQLContext graphQLContext,
+                                  @NotNull Locale locale) throws CoercingParseLiteralException {
+        if (input instanceof StringValue)
+            try {
+                return LocalDate.parse(((StringValue) input).getValue(), DateTimeFormatter.ISO_DATE);
+            } catch (Exception e) {
+                throw new CoercingSerializeException("Not a valid Date:" + e.getMessage());
+            }
+
+        throw new CoercingParseLiteralException("Value is not a valid ISO date");
     }
 }
-

@@ -96,7 +96,7 @@ public class SecurityConfig {
                         /* ^ Allows unauthenticated access to the SPA static resources */
                         .pathMatchers(HttpMethod.POST, "/logout/**","/logged-out/**").permitAll()
                         .pathMatchers(HttpMethod.GET, "/test/**","/gateway/**").permitAll()
-                       .anyExchange().authenticated()
+                        .anyExchange().authenticated()
                 )
                 //.exceptionHandling(exceptionHandling -> exceptionHandling
                 //         .authenticationEntryPoint(new HttpStatusServerEntryPoint(HttpStatus.UNAUTHORIZED)))
@@ -114,6 +114,7 @@ public class SecurityConfig {
                                 .logoutSuccessHandler(oidcLogoutSuccessHandler(clientRegistrationRepository))
                 )
                 .csrf(csrf -> csrf.csrfTokenRepository(CookieServerCsrfTokenRepository.withHttpOnlyFalse()))
+                // ^ Uses a cookie-based strategy for exchanging CSRF tokens with the frontend
                 .build();
     }
 

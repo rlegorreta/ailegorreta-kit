@@ -129,10 +129,10 @@ public class WebClientConfig {
                                                                     OAuth2AuthorizedClientRepository authorizedClientRepository) {
 
         var authorizedClientProvider = OAuth2AuthorizedClientProviderBuilder.builder()
-                                                                                                    .authorizationCode()
-                                                                                                    .refreshToken()
-                                                                                                    .clientCredentials()
-                                                                                                    .build();
+                                                                            .authorizationCode()
+                                                                            .refreshToken()
+                                                                            .clientCredentials()
+                                                                            .build();
         var authorizedClientManager = new DefaultOAuth2AuthorizedClientManager(clientRegistrationRepository, authorizedClientRepository);
 
         authorizedClientManager.setAuthorizedClientProvider(authorizedClientProvider);

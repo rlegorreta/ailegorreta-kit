@@ -25,12 +25,14 @@ package com.ailegorreta.resourceserver.rest.config;
 import com.ailegorreta.resourceserver.rest.WebClientFilter;
 import com.ailegorreta.resourceserver.security.config.SecurityServiceConfig;
 import org.springframework.security.oauth2.client.*;
-import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
+import org.springframework.security.oauth2.client.registration.InMemoryClientRegistrationRepository;
 import org.springframework.security.oauth2.client.registration.InMemoryReactiveClientRegistrationRepository;
+import org.springframework.security.oauth2.client.registration.ReactiveClientRegistrationRepository;
 import org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager;
+import org.springframework.security.oauth2.client.web.DefaultReactiveOAuth2AuthorizedClientManager;
 import org.springframework.security.oauth2.client.web.OAuth2AuthorizedClientRepository;
 import org.springframework.security.oauth2.client.web.reactive.function.client.ServerOAuth2AuthorizedClientExchangeFilterFunction;
-import org.springframework.security.oauth2.client.web.reactive.function.client.ServletOAuth2AuthorizedClientExchangeFilterFunction;
+import org.springframework.security.oauth2.client.web.server.ServerOAuth2AuthorizedClientRepository;
 import org.springframework.web.reactive.function.client.WebClient;
 
 /**
@@ -40,7 +42,7 @@ import org.springframework.web.reactive.function.client.WebClient;
  *
  * @project: ailegorreta-kit-resource-server-security
  * @author rlh
- * @date June 2023
+ * @date August 2023
  */
 public class WebClientConfig {
 
@@ -71,43 +73,47 @@ public class WebClientConfig {
     public WebClient webClientClientCredentialsNoFilters(WebClient.Builder webClientBuilder,
                                                          SecurityServiceConfig securityServiceConfig,
                                                          String hostName,
-                                                         OAuth2AuthorizedClientManager clientManager) {
+                                                         ReactiveOAuth2AuthorizedClientManager clientManager) {
 
-        var oauth2 = new ServletOAuth2AuthorizedClientExchangeFilterFunction(clientManager);
+        var oauth2 = new ServerOAuth2AuthorizedClientExchangeFilterFunction(clientManager);
 
         oauth2.setDefaultClientRegistrationId(securityServiceConfig.getSecurityClientId()
                                                                    .get(hostName) + "-client-credentials");
 
-        return  WebClient.builder()
-                        .apply(oauth2.oauth2Configuration())
-                        .build();
+        return  webClientBuilder.filter(oauth2)
+                                .build();
     }
 
     public AuthorizedClientServiceReactiveOAuth2AuthorizedClientManager getClientManager(SecurityServiceConfig securityServiceConfig,
                                                                                          String hostName,
-                                                                                         ClientRegistrationRepository clientRegistrationRepository) {
+                                                                                         ReactiveClientRegistrationRepository clientRegistrationRepository) {
         var clientRegistration = clientRegistrationRepository.findByRegistrationId(
-                                                                securityServiceConfig.getSecurityClientId()
-                                                                                     .get(hostName) + "-client-credentials");
+                                                              securityServiceConfig.getSecurityClientId()
+                                                                                   .get(hostName) + "-client-credentials").block();
         var clients = new InMemoryReactiveClientRegistrationRepository(clientRegistration);
         var clientService = new InMemoryReactiveOAuth2AuthorizedClientService(clients);
 
         return new AuthorizedClientServiceReactiveOAuth2AuthorizedClientManager(clients, clientService);
     }
 
-    public OAuth2AuthorizedClientManager getAuthorizedClientManager( ClientRegistrationRepository clientRegistrationRepository,
-                                                                     OAuth2AuthorizedClientRepository authorizedClientRepository) {
+    public ReactiveOAuth2AuthorizedClientManager getAuthorizedClientManager( SecurityServiceConfig securityServiceConfig,
+                                                                     String hostName,
+                                                                     ReactiveClientRegistrationRepository clientRegistrationRepository,
+                                                                     ServerOAuth2AuthorizedClientRepository authorizedClientRepository) {
 
-        var authorizedClientProvider = OAuth2AuthorizedClientProviderBuilder.builder()
-                                                                                                        .authorizationCode()
-                                                                                                        .refreshToken()
-                                                                                                        .clientCredentials()
-                                                                                                        .build();
-        var authorizedClientManager = new DefaultOAuth2AuthorizedClientManager(clientRegistrationRepository, authorizedClientRepository);
+        var authorizedClientProvider = ReactiveOAuth2AuthorizedClientProviderBuilder.builder()
+                                                                                    .authorizationCode()
+                                                                                    .refreshToken()
+                                                                                    .clientCredentials()
+                                                                                    .build();
+        var clientRegistration = clientRegistrationRepository.findByRegistrationId(
+                                                              securityServiceConfig.getSecurityClientId()
+                                                                                   .get(hostName) + "-client-credentials").block();
+        var clients = new InMemoryReactiveClientRegistrationRepository(clientRegistration);
+        var authorizedClientManager = new DefaultReactiveOAuth2AuthorizedClientManager(clients, authorizedClientRepository);
 
         authorizedClientManager.setAuthorizedClientProvider(authorizedClientProvider);
 
         return authorizedClientManager;
     }
-
 }

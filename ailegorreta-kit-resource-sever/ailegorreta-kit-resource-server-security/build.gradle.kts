@@ -89,6 +89,7 @@ publishing {
     repositories {
         mavenLocal()
 
+        /*
         maven {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
@@ -97,6 +98,8 @@ publishing {
                 password = System.getenv("GITHUB_TOKEN")
             }
         }
+
+         */
     }
 }
 
