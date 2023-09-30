@@ -22,10 +22,9 @@
  */
 package com.ailegorreta.client.security.config;
 
-import com.ailegorreta.commons.security.authserver.AuthOidcClientInitiatedLogoutSuccessHandler;
-import com.ailegorreta.commons.security.config.SecurityServiceConfig;
-import com.ailegorreta.commons.security.repository.SessionRepository;
-import com.ailegorreta.commons.security.repository.SessionRepositoryListener;
+import com.ailegorreta.client.security.authserver.AuthOidcClientInitiatedLogoutSuccessHandler;
+import com.ailegorreta.client.security.repository.SessionRepository;
+import com.ailegorreta.client.security.repository.SessionRepositoryListener;
 import com.ailegorreta.client.security.vaadin.VaadinAwareSecurityContextHolderStrategy;
 import com.vaadin.flow.spring.security.VaadinSavedRequestAwareAuthenticationSuccessHandler;
 import com.vaadin.flow.spring.security.VaadinWebSecurity;
@@ -39,10 +38,8 @@ import org.springframework.security.core.authority.mapping.GrantedAuthoritiesMap
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
 import org.springframework.security.web.authentication.logout.SimpleUrlLogoutSuccessHandler;
-import org.springframework.security.web.csrf.CsrfToken;
+import org.springframework.security.web.csrf.CookieCsrfTokenRepository;
 import org.springframework.security.web.util.matcher.AntPathRequestMatcher;
-import org.springframework.web.server.WebFilter;
-import reactor.core.publisher.Mono;
 
 /**
  * Security configuration for valid URLs in the Application. And also reads what are the valid
@@ -53,7 +50,7 @@ import reactor.core.publisher.Mono;
  *
  * @project ailegorreta-kit-client-security
  * @author rlh
- * @Date: June 2023
+ * @Date: September 2023
  */
 public abstract class SecurityConfig extends VaadinWebSecurity {
 
@@ -128,7 +125,12 @@ public abstract class SecurityConfig extends VaadinWebSecurity {
                                 // application (since Vaadin uses its own CSRF tokens). By changing the logout endpoint
                                 // to accept GET requests, we can redirect to the logout URL from within Vaadin.
                                 .logoutRequestMatcher(new AntPathRequestMatcher("/logout", "GET"))
-                );
+                )
+                .csrf(csrf -> csrf.csrfTokenRepository(CookieCsrfTokenRepository.withHttpOnlyFalse()))
+                // ^ Uses a cookie-based strategy for exchanging CSRF tokens with the frontend
+                //   Because this is a UI that always calls the gate-way. But Vaadin handle client-server
+                //   communication automatically
+                ;
     }
 
     protected SimpleUrlLogoutSuccessHandler logoutSuccessHandler() {
@@ -140,17 +142,6 @@ public abstract class SecurityConfig extends VaadinWebSecurity {
         return logoutSuccessHandler;
     }
 
-    @Bean
-    WebFilter csrfWebFilter() {
-        // Required because of https://github.com/spring-projects/spring-security/issues/5766
-        return (exchange, chain) -> {
-            exchange.getResponse().beforeCommit(() -> Mono.defer(() -> {
-                Mono<CsrfToken> csrfToken = exchange.getAttribute(CsrfToken.class.getName());
-                return csrfToken != null ? csrfToken.then() : Mono.empty();
-            }));
-            return chain.filter(exchange);
-        };
-    }
     @Override
     public void configure(WebSecurity web) throws Exception {
         super.configure(web);
@@ -160,8 +151,8 @@ public abstract class SecurityConfig extends VaadinWebSecurity {
     public PolicyFactory htmlSanitizer() {
         // This is the policy we will be using to sanitize HTML input
         return Sanitizers.FORMATTING.and(Sanitizers.BLOCKS)
-                .and(Sanitizers.STYLES)
-                .and(Sanitizers.LINKS);
+                                    .and(Sanitizers.STYLES)
+                                    .and(Sanitizers.LINKS);
     }
 
 }

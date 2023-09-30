@@ -71,7 +71,7 @@ publishing {
             }
             pom {
                 name.set("ailegorreta-kit-commons-security")
-                description.set("Classes to implement security for front-end microservices, no Vaadin")
+                description.set("Classes to implement security for front-end microservices, NOT Vaadin")
                 url.set("http://www.legosoft.com.mx")
                 properties.set(mapOf(
                     "version" to "2.0.0"

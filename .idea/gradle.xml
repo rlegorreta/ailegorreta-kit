@@ -19,6 +19,7 @@
             <option value="$PROJECT_DIR$/ailegorreta-kit-commons/ailegorreta-kit-commons-utils" />
             <option value="$PROJECT_DIR$/ailegorreta-kit-data" />
             <option value="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-jpa" />
+            <option value="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-mongo" />
             <option value="$PROJECT_DIR$/ailegorreta-kit-data/ailegorreta-kit-data-neo4j" />
             <option value="$PROJECT_DIR$/ailegorreta-kit-resource-sever" />
             <option value="$PROJECT_DIR$/ailegorreta-kit-resource-sever/ailegorreta-kit-resource-server-security" />

@@ -83,7 +83,8 @@ public class SecurityConfig {
     }
 
     protected SecurityWebFilterChain springSecurityFilterChain(ServerHttpSecurity http,
-                                                     ReactiveClientRegistrationRepository clientRegistrationRepository) {
+                                                               ReactiveClientRegistrationRepository clientRegistrationRepository,
+                                                               String publicPath) {
         // Configure your static resources with public access before calling
         // super.configure(HttpSecurity) as it adds final anyRequest matcher
         return http
@@ -92,6 +93,7 @@ public class SecurityConfig {
                        .pathMatchers(  "/*.css", "/*.js", "/favicon.ico", "/images/**","/assets/**","/webjars/**",
                                       "/oauth2/**", "/logged-out/**", "/session-expired/**",
                                       "/login/*+","/authorize/**","/authorized/**",
+                                      "/" + publicPath + "/**",  // this prefix is to avoid login 302 redirection
                                       "/actuator/**").permitAll()
                         /* ^ Allows unauthenticated access to the SPA static resources */
                         .pathMatchers(HttpMethod.POST, "/logout/**","/logged-out/**").permitAll()
@@ -113,8 +115,14 @@ public class SecurityConfig {
                                 // Enable OIDC logout (requires that we use the 'openid' scope when authenticating)
                                 .logoutSuccessHandler(oidcLogoutSuccessHandler(clientRegistrationRepository))
                 )
-                .csrf(csrf -> csrf.csrfTokenRepository(CookieServerCsrfTokenRepository.withHttpOnlyFalse()))
-                // ^ Uses a cookie-based strategy for exchanging CSRF tokens with the frontend
+                // .csrf(csrf -> csrf.csrfTokenRepository(CookieServerCsrfTokenRepository.withHttpOnlyFalse()))
+                // ^ Uses a cookie-based strategy for exchanging CSRF tokens with the frontend. This means that the
+                // gateway will only receive call from UI microservices and not from back-end microservice, i.e., they
+                // will call between them directly.
+                // note recommended, to disable csrf protection, but it is a TODO with Vaadin
+                // To disable the csrf we can use:
+                .csrf(ServerHttpSecurity.CsrfSpec::disable)
+
                 .build();
     }
 
@@ -126,6 +134,11 @@ public class SecurityConfig {
         return oidcLogoutSuccessHandler;
     }
 
+    /**
+     * At the moment, CookieServerCsrfTokenRepository does not ensure a subscription to CsrfToken, so we must
+     * explicitly provide a workaround in a Web-Filter bean. This problem should be solved in future versions of
+     * Spring Security (see issue 5766 on GitHub: https://mng.bz/XW89)
+     */
     @Bean
     WebFilter csrfWebFilter() {
         // Required because of https://github.com/spring-projects/spring-security/issues/5766

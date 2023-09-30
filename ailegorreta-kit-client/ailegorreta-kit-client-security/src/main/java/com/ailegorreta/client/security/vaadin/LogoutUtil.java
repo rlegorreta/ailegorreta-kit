@@ -31,7 +31,7 @@ import org.springframework.web.util.UriComponentsBuilder;
  *
  * @project ailegorreta-kit-client-security
  * @author rlh
- * @date June 2023
+ * @date September 2023
  */
 public class LogoutUtil {
     private final String relativeLogoutUrl;
@@ -43,8 +43,9 @@ public class LogoutUtil {
                                                 .path("/logout")
                                                 .build()
                                                 .toUriString();
-        // TODO there is a bug in the Spring Authorization server 1.0.0 where the end_session_endpoint is not
-        // TODO implemented yet. So we need to fix it latter. Must be 'logout' path
+        // TODO there is a bug in the Spring Authorization server 1.0.0 where the end_session_endpoint is defined
+        // TODO as /connect/logout. So we need to fix it latter. Must be manually 'logout' path
+        // TODO see AuthOidcClientInitiatedLogoutSuccessHandler java class
     }
 
     /**

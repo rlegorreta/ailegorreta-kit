@@ -1,10 +1,13 @@
+import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
+
 plugins {
     `java-library`
     `maven-publish`
     id("org.springframework.boot") version "3.1.0"
     id("io.spring.dependency-management") version "1.1.0"
     id("java")
-    kotlin("jvm") version "1.8.21"}
+    kotlin("jvm") version "1.8.21"
+}
 
 group = "com.ailegorreta"
 version = "2.0.0"
@@ -17,25 +20,30 @@ configurations {
 }
 
 repositories {
-    mavenLocal()
     mavenCentral()
     maven { url = uri("https://repo.spring.io/snapshot") }
 }
 
 extra["springCloudVersion"] = "2022.0.3"
-extra["ailegorreta-kit-version"] = "2.0.0"
+extra["queryDslVersion"] = "5.0.0"
+extra["ailegorretaVersion"] = "2.0.0"
 extra["jacksonVersion"] = "2.15.2"
 
 dependencies {
-    implementation("org.springframework.cloud:spring-cloud-stream")
-    implementation("org.springframework.cloud:spring-cloud-stream-binder-kafka")
+    implementation("org.springframework.boot:spring-boot-starter-data-mongodb")
+    implementation("org.springframework.boot:spring-boot-starter-graphql")
+    implementation("org.springframework.boot:spring-boot-starter-validation")
+
+    implementation("com.querydsl:querydsl-core:${property("queryDslVersion")}")
+    implementation("com.querydsl:querydsl-mongodb:${property("queryDslVersion")}") {
+        exclude(group = "org.mongodb", module = "mongo-java-driver")
+    }
+    implementation("com.querydsl:querydsl-apt:${property("queryDslVersion")}")
 
     implementation("org.apache.commons:commons-lang3:3.12.0")
     implementation("org.slf4j:slf4j-api")
 
     implementation("com.fasterxml.jackson.core:jackson-databind:${property("jacksonVersion")}")
-
-    implementation(project(":ailegorreta-kit-commons:ailegorreta-kit-commons-utils"))
 
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
@@ -44,6 +52,7 @@ dependencies {
 dependencyManagement {
     imports {
         mavenBom("org.springframework.cloud:spring-cloud-dependencies:${property("springCloudVersion")}")
+        mavenBom("com.querydsl:querydsl-apt:${property("queryDslVersion")}")
     }
 }
 
@@ -58,7 +67,7 @@ publishing {
     publications {
         create<MavenPublication>("mavenJava") {
             groupId = "com.ailegorreta"
-            artifactId = "ailegorreta-kit-commons-event"
+            artifactId = "ailegorreta-kit-data-mongo"
             from(components["java"])
             versionMapping {
                 usage("java-api") {
@@ -69,8 +78,8 @@ publishing {
                 }
             }
             pom {
-                name.set("ailegorreta-commons-event")
-                description.set("DTO to be used by events")
+                name.set("ailegorreta-kit-data-mongo")
+                description.set("General utilities access Spring Data MongoDB")
                 url.set("http://www.legosoft.com.mx")
                 properties.set(mapOf(
                     "version" to "2.0.0"
@@ -90,6 +99,7 @@ publishing {
     repositories {
         mavenLocal()
 
+        /*
         maven {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
@@ -99,7 +109,23 @@ publishing {
             }
         }
 
+         */
     }
+}
+
+tasks.getByName<Test>("test") {
+    useJUnitPlatform()
+}
+
+tasks.withType<KotlinCompile> {
+    kotlinOptions {
+        freeCompilerArgs += "-Xjsr305=strict"
+        jvmTarget = "17"
+    }
+}
+
+tasks.withType<JavaCompile> {
+    options.compilerArgs.add("-Xlint:deprecation")
 }
 
 tasks.test {

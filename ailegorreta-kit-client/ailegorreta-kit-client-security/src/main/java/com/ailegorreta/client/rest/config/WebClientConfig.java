@@ -20,32 +20,31 @@
  *
  *  Developed 2023 by LegoSoftSoluciones, S.C. www.legosoft.com.mx
  */
-package com.ailegorreta.commons.rest.config;
+package com.ailegorreta.client.rest.config;
 
-import com.ailegorreta.commons.rest.WebClientFilter;
-import com.ailegorreta.commons.security.config.SecurityServiceConfig;
+import com.ailegorreta.client.rest.WebClientFilter;
 import org.springframework.security.oauth2.client.*;
+import org.springframework.security.oauth2.client.registration.InMemoryReactiveClientRegistrationRepository;
 import org.springframework.security.oauth2.client.registration.ClientRegistrationRepository;
 import org.springframework.security.oauth2.client.registration.ReactiveClientRegistrationRepository;
-import org.springframework.security.oauth2.client.registration.InMemoryReactiveClientRegistrationRepository;
 import org.springframework.security.oauth2.client.web.DefaultOAuth2AuthorizedClientManager;
+import org.springframework.security.oauth2.client.web.DefaultReactiveOAuth2AuthorizedClientManager;
 import org.springframework.security.oauth2.client.web.OAuth2AuthorizedClientRepository;
-import org.springframework.security.oauth2.client.web.reactive.function.client.ServerOAuth2AuthorizedClientExchangeFilterFunction;
 import org.springframework.security.oauth2.client.web.reactive.function.client.ServletOAuth2AuthorizedClientExchangeFilterFunction;
 import org.springframework.web.reactive.function.client.WebClient;
+import com.ailegorreta.client.security.config.SecurityServiceConfig;
 
 /**
- * Creates a new instance of WebClient.
+ * Creates a new instance of WebClient. This is a subclass of commons.WebClientConfig
+ * because the security in Vaadin (i.e., VaadinWebSecurity class) is not werbflux, co
+ * the repository that we received is not reactive. This subclass fix this.
  *
- * One bean for client_credentials grant type and
- * a second bean for authentication_code
  *
- * @project: ailegorreta-kit-commons-security-rest
+ * @project: ailegorreta-kit-client-security-rest
  * @author rlh
- * @date June 2023
+ * @date September 2023
  */
 public class WebClientConfig {
-
     /**
      * Client-credential version. Very rare use this method since we are un the UI interface, so normally
      * we use the authorization-code grant type.
@@ -53,8 +52,8 @@ public class WebClientConfig {
      */
     public WebClient webClientClientCredentials(WebClient.Builder webClientBuilder,
                                                 SecurityServiceConfig securityServiceConfig,
-                                                ReactiveOAuth2AuthorizedClientManager clientManager) {
-        var oauth2 = new ServerOAuth2AuthorizedClientExchangeFilterFunction(clientManager);
+                                                OAuth2AuthorizedClientManager clientManager) {
+        var oauth2 = new ServletOAuth2AuthorizedClientExchangeFilterFunction(clientManager);
 
         oauth2.setDefaultClientRegistrationId(securityServiceConfig.getSecurityClientId() + "-client-credentials");
 
@@ -76,7 +75,7 @@ public class WebClientConfig {
         oauth2.setDefaultClientRegistrationId(securityServiceConfig.getSecurityClientId() + "-client-credentials");
 
         return  WebClient.builder()
-                        .apply(oauth2.oauth2Configuration())
+                        .filter(oauth2)
                         .build();
     }
 
@@ -93,10 +92,10 @@ public class WebClientConfig {
         oauth2Client.setDefaultClientRegistrationId(securityServiceConfig.getSecurityClientId() + "-oidc");
 
         return webClientBuilder.filter(WebClientFilter.errorHandler())
-                               .filter(WebClientFilter.logRequest())
-                               .filter(WebClientFilter.logResponse())
-                               .apply(oauth2Client.oauth2Configuration())
-                               .build();
+                                .filter(WebClientFilter.logRequest())
+                                .filter(WebClientFilter.logResponse())
+                                .filter(oauth2Client)
+                                .build();
     }
 
     /**
@@ -111,14 +110,14 @@ public class WebClientConfig {
         oauth2Client.setDefaultOAuth2AuthorizedClient(true);
         oauth2Client.setDefaultClientRegistrationId(securityServiceConfig.getSecurityClientId() + "-oidc");
 
-        return webClientBuilder.apply(oauth2Client.oauth2Configuration())
+        return webClientBuilder.filter(oauth2Client)
                                .build();
     }
 
-    public AuthorizedClientServiceReactiveOAuth2AuthorizedClientManager getClientManager(SecurityServiceConfig securityServiceConfig,
-                                                                                         ReactiveClientRegistrationRepository clientRegistrationRepository,
-                                                                                         String grantType) {
-        var clientRegistration = clientRegistrationRepository.findByRegistrationId(securityServiceConfig.getSecurityClientId() + "-" + grantType).block();
+    public ReactiveOAuth2AuthorizedClientManager getClientManager(SecurityServiceConfig securityServiceConfig,
+                                                                  ClientRegistrationRepository clientRegistrationRepository,
+                                                                  String grantType) {
+        var clientRegistration = clientRegistrationRepository.findByRegistrationId(securityServiceConfig.getSecurityClientId() + "-" + grantType);
         var clients = new InMemoryReactiveClientRegistrationRepository(clientRegistration);
         var clientService = new InMemoryReactiveOAuth2AuthorizedClientService(clients);
 

@@ -36,7 +36,7 @@ import java.io.IOException
  *
  * @author rlh
  * @project : lmasskit-commons-event
- * @date July 2023
+ * @date September 2023
  */
 data class EventDTO constructor(@JsonProperty("correlationId") var correlationId:String?,
                                 @JsonProperty("eventType") var eventType: EventType,

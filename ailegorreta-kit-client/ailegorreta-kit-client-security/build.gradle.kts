@@ -32,7 +32,6 @@ dependencies {
     implementation("org.springframework.boot:spring-boot-starter-webflux")
     implementation("org.springframework.cloud:spring-cloud-starter-loadbalancer")
 
-    implementation(project(":ailegorreta-kit-commons:ailegorreta-kit-commons-security"))
     implementation("com.vaadin:vaadin-core:${property("vaadinVersion")}") {
         exclude( group="com.vaadin",  module="flow-polymer-template") /* Replace artifactId with vaadin-core to use only free components */
     }
@@ -99,6 +98,7 @@ publishing {
     repositories {
         mavenLocal()
 
+        /*
         maven {
             name = "GitHubPackages"
             url = uri("https://maven.pkg.github.com/rlegorreta/ailegorreta-kit")
@@ -107,6 +107,9 @@ publishing {
                 password = System.getenv("GITHUB_TOKEN")
             }
         }
+
+         */
+
     }
 }
 
